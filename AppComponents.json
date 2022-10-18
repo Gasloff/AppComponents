@@ -437,6 +437,12 @@
           "group": "io.jmix.audit",
           "name": "jmix-audit-ui-starter",
           "main": true
+        },
+        {
+          "group": "io.jmix.audit",
+          "name": "jmix-audit-flowui-starter",
+          "main": true,
+          "versionRange": "(1.3.999-SNAPSHOT,)"
         }
       ],
       "compatibilityList": [
@@ -518,7 +524,7 @@
           "group": "io.jmix.datatools",
           "name": "jmix-datatools-flowui-starter",
           "main": true,
-          "versionRange": "[1.4,)"
+          "versionRange": "(1.3.999-SNAPSHOT,)"
         }
       ],
       "compatibilityList": [
