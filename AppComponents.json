@@ -63,7 +63,7 @@
       ],
       "commercial": true,
       "weight": 950,
-      "changeloqPath": "/io/jmix/bpm/liquibase/changelog.xml"
+      "changelogPath": "/io/jmix/bpm/liquibase/changelog.xml"
     },
     {
       "id": "charts",
