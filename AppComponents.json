@@ -62,7 +62,8 @@
         }
       ],
       "commercial": true,
-      "weight": 950
+      "weight": 950,
+      "changeloqPath": "/io/jmix/bpm/liquibase/changelog.xml"
     },
     {
       "id": "charts",
@@ -496,7 +497,8 @@
         }
       ],
       "commercial": false,
-      "weight": 950
+      "weight": 950,
+      "changelogPath": "/io/jmix/audit/liquibase/changelog.xml"
     },
     {
       "id": "data-tools",
