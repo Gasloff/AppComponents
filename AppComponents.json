@@ -10,7 +10,7 @@
         "Features"
       ],
       "vendor": "Haulmont",
-      "updateDateTime": 1662619832000,
+      "updateDateTime": 1675072737000,
       "dependencies": [
         {
           "group": "io.jmix.bpm",
@@ -59,11 +59,16 @@
           "artifactVersions": [
             "1.4.999"
           ]
+        },
+        {
+          "platformRequirement": "1.5",
+          "artifactVersions": [
+            "1.5.999"
+          ]
         }
       ],
       "commercial": true,
-      "weight": 950,
-      "changelogPath": "/io/jmix/bpm/liquibase/changelog.xml"
+      "weight": 950
     },
     {
       "id": "charts",
@@ -75,7 +80,7 @@
         "UI"
       ],
       "vendor": "Haulmont",
-      "updateDateTime": 1662619545000,
+      "updateDateTime": 1675072294000,
       "dependencies": [
         {
           "group": "io.jmix.ui",
@@ -130,6 +135,12 @@
           "artifactVersions": [
             "1.4.999"
           ]
+        },
+        {
+          "platformRequirement": "1.5",
+          "artifactVersions": [
+            "1.5.999"
+          ]
         }
       ],
       "commercial": false,
@@ -145,7 +156,7 @@
         "UI"
       ],
       "vendor": "Haulmont",
-      "updateDateTime": 1662619576000,
+      "updateDateTime": 1675072325000,
       "dependencies": [
         {
           "group": "io.jmix.ui",
@@ -200,6 +211,12 @@
           "artifactVersions": [
             "1.4.999"
           ]
+        },
+        {
+          "platformRequirement": "1.5",
+          "artifactVersions": [
+            "1.5.999"
+          ]
         }
       ],
       "commercial": false,
@@ -215,7 +232,7 @@
         "Integration"
       ],
       "vendor": "Haulmont",
-      "updateDateTime": 1662619570000,
+      "updateDateTime": 1675072320000,
       "dependencies": [
         {
           "group": "io.jmix.imap",
@@ -270,6 +287,12 @@
           "artifactVersions": [
             "1.4.999"
           ]
+        },
+        {
+          "platformRequirement": "1.5",
+          "artifactVersions": [
+            "1.5.999"
+          ]
         }
       ],
       "commercial": false,
@@ -286,7 +309,7 @@
         "System"
       ],
       "vendor": "Haulmont",
-      "updateDateTime": 1662619543000,
+      "updateDateTime": 1675072292000,
       "dependencies": [
         {
           "group": "io.jmix.awsfs",
@@ -336,6 +359,12 @@
           "artifactVersions": [
             "1.4.999"
           ]
+        },
+        {
+          "platformRequirement": "1.5",
+          "artifactVersions": [
+            "1.5.999"
+          ]
         }
       ],
       "commercial": false,
@@ -351,7 +380,7 @@
         "Features"
       ],
       "vendor": "Haulmont",
-      "updateDateTime": 1662619561000,
+      "updateDateTime": 1675072310000,
       "dependencies": [
         {
           "group": "io.jmix.email",
@@ -412,6 +441,12 @@
           "artifactVersions": [
             "1.4.999"
           ]
+        },
+        {
+          "platformRequirement": "1.5",
+          "artifactVersions": [
+            "1.5.999"
+          ]
         }
       ],
       "commercial": false,
@@ -427,7 +462,7 @@
         "Features"
       ],
       "vendor": "Haulmont",
-      "updateDateTime": 1662619540000,
+      "updateDateTime": 1675072289000,
       "dependencies": [
         {
           "group": "io.jmix.audit",
@@ -494,11 +529,16 @@
           "artifactVersions": [
             "1.4.999"
           ]
+        },
+        {
+          "platformRequirement": "1.5",
+          "artifactVersions": [
+            "1.5.999"
+          ]
         }
       ],
       "commercial": false,
-      "weight": 950,
-      "changelogPath": "/io/jmix/audit/liquibase/changelog.xml"
+      "weight": 950
     },
     {
       "id": "data-tools",
@@ -510,7 +550,7 @@
         "Features"
       ],
       "vendor": "Haulmont",
-      "updateDateTime": 1662619556000,
+      "updateDateTime": 1675072306000,
       "dependencies": [
         {
           "group": "io.jmix.datatools",
@@ -577,6 +617,12 @@
           "artifactVersions": [
             "1.4.999"
           ]
+        },
+        {
+          "platformRequirement": "1.5",
+          "artifactVersions": [
+            "1.5.999"
+          ]
         }
       ],
       "commercial": false,
@@ -592,7 +638,7 @@
         "Features"
       ],
       "vendor": "Haulmont",
-      "updateDateTime": 1662619558000,
+      "updateDateTime": 1675072308000,
       "dependencies": [
         {
           "group": "io.jmix.dynattr",
@@ -653,6 +699,12 @@
           "artifactVersions": [
             "1.4.999"
           ]
+        },
+        {
+          "platformRequirement": "1.5",
+          "artifactVersions": [
+            "1.5.999"
+          ]
         }
       ],
       "commercial": false,
@@ -668,7 +720,7 @@
         "Integration"
       ],
       "vendor": "Haulmont",
-      "updateDateTime": 1662619580000,
+      "updateDateTime": 1675072330000,
       "dependencies": [
         {
           "group": "io.jmix.rest",
@@ -728,6 +780,12 @@
           "artifactVersions": [
             "1.4.999"
           ]
+        },
+        {
+          "platformRequirement": "1.5",
+          "artifactVersions": [
+            "1.5.999"
+          ]
         }
       ],
       "commercial": false,
@@ -743,7 +801,7 @@
         "UI"
       ],
       "vendor": "Haulmont",
-      "updateDateTime": 1662619835000,
+      "updateDateTime": 1675072740000,
       "dependencies": [
         {
           "group": "io.jmix.maps",
@@ -809,6 +867,12 @@
           "artifactVersions": [
             "1.4.999"
           ]
+        },
+        {
+          "platformRequirement": "1.5",
+          "artifactVersions": [
+            "1.5.999"
+          ]
         }
       ],
       "commercial": true,
@@ -824,7 +888,7 @@
         "Features"
       ],
       "vendor": "Haulmont",
-      "updateDateTime": 1662619589000,
+      "updateDateTime": 1675072338000,
       "dependencies": [
         {
           "group": "io.jmix.ui",
@@ -880,6 +944,12 @@
           "artifactVersions": [
             "1.4.999"
           ]
+        },
+        {
+          "platformRequirement": "1.5",
+          "artifactVersions": [
+            "1.5.999"
+          ]
         }
       ],
       "commercial": false,
@@ -896,7 +966,7 @@
         "Features"
       ],
       "vendor": "Haulmont",
-      "updateDateTime": 1662619582000,
+      "updateDateTime": 1675072331000,
       "dependencies": [
         {
           "group": "io.jmix.search",
@@ -939,6 +1009,12 @@
           "artifactVersions": [
             "1.4.999"
           ]
+        },
+        {
+          "platformRequirement": "1.5",
+          "artifactVersions": [
+            "1.5.999"
+          ]
         }
       ],
       "commercial": false,
@@ -954,7 +1030,7 @@
         "Features"
       ],
       "vendor": "Haulmont",
-      "updateDateTime": 1662619579000,
+      "updateDateTime": 1675072328000,
       "dependencies": [
         {
           "group": "io.jmix.reports",
@@ -1008,6 +1084,12 @@
           "artifactVersions": [
             "1.4.999"
           ]
+        },
+        {
+          "platformRequirement": "1.5",
+          "artifactVersions": [
+            "1.5.999"
+          ]
         }
       ],
       "commercial": false,
@@ -1023,7 +1105,7 @@
         "System"
       ],
       "vendor": "Haulmont",
-      "updateDateTime": 1662619573000,
+      "updateDateTime": 1675072323000,
       "dependencies": [
         {
           "group": "io.jmix.multitenancy",
@@ -1033,6 +1115,12 @@
         {
           "group": "io.jmix.multitenancy",
           "name": "jmix-multitenancy-ui-starter",
+          "main": true
+        },
+        {
+          "group": "io.jmix.multitenancy",
+          "name": "jmix-multitenancy-flowui-starter",
+          "versionRange": "(1.4.999-SNAPSHOT,)",
           "main": true
         }
       ],
@@ -1066,6 +1154,12 @@
           "artifactVersions": [
             "1.4.999"
           ]
+        },
+        {
+          "platformRequirement": "1.5",
+          "artifactVersions": [
+            "1.5.999"
+          ]
         }
       ],
       "commercial": false,
@@ -1082,7 +1176,7 @@
         "Security"
       ],
       "vendor": "Haulmont",
-      "updateDateTime": 1662619571000,
+      "updateDateTime": 1675072321000,
       "dependencies": [
         {
           "group": "io.jmix.ldap",
@@ -1119,6 +1213,12 @@
           "platformRequirement": "1.4",
           "artifactVersions": [
             "1.4.999"
+          ]
+        },
+        {
+          "platformRequirement": "1.5",
+          "artifactVersions": [
+            "1.5.999"
           ]
         }
       ],
@@ -1165,7 +1265,7 @@
         "System"
       ],
       "vendor": "Panos Bariamis",
-      "updateDateTime": 1640592000000,
+      "updateDateTime": 1656959923000,
       "dependencies": [
         {
           "group": "gr.netmechanics.jmix",
@@ -1173,7 +1273,32 @@
           "main": true
         }
       ],
-      "compatibilityList": [],
+      "compatibilityList": [
+        {
+          "platformRequirement": "1.1",
+          "artifactVersions": [
+            "1.1.0"
+          ]
+        },
+        {
+          "platformRequirement": "1.2",
+          "artifactVersions": [
+            "1.2.2"
+          ]
+        },
+        {
+          "platformRequirement": "1.3",
+          "artifactVersions": [
+            "1.3.1"
+          ]
+        },
+        {
+          "platformRequirement": "1.4",
+          "artifactVersions": [
+            "1.4.0"
+          ]
+        }
+      ],
       "commercial": false,
       "weight": 1
     },
@@ -1187,7 +1312,7 @@
         "Features"
       ],
       "vendor": "Haulmont",
-      "updateDateTime": 1662619839000,
+      "updateDateTime": 1675072745000,
       "dependencies": [
         {
           "group": "io.jmix.webdav",
@@ -1229,6 +1354,12 @@
           "artifactVersions": [
             "1.4.999"
           ]
+        },
+        {
+          "platformRequirement": "1.5",
+          "artifactVersions": [
+            "1.5.999"
+          ]
         }
       ],
       "commercial": true,
@@ -1244,7 +1375,7 @@
         "UI"
       ],
       "vendor": "Haulmont",
-      "updateDateTime": 1662619553000,
+      "updateDateTime": 1675072302000,
       "dependencies": [
         {
           "group": "io.jmix.dashboards",
@@ -1287,6 +1418,12 @@
           "artifactVersions": [
             "1.4.999"
           ]
+        },
+        {
+          "platformRequirement": "1.5",
+          "artifactVersions": [
+            "1.5.999"
+          ]
         }
       ],
       "commercial": false,
@@ -1303,7 +1440,7 @@
         "System"
       ],
       "vendor": "Community",
-      "updateDateTime": 1657231157000,
+      "updateDateTime": 1673688146000,
       "dependencies": [
         {
           "group": "dev.warhammster.jmix",
@@ -1329,6 +1466,12 @@
           "artifactVersions": [
             "1.3.0"
           ]
+        },
+        {
+          "platformRequirement": "1.4",
+          "artifactVersions": [
+            "1.4.0"
+          ]
         }
       ],
       "commercial": false,
@@ -1344,7 +1487,7 @@
         "Features"
       ],
       "vendor": "Haulmont",
-      "updateDateTime": 1662619834000,
+      "updateDateTime": 1675072739000,
       "dependencies": [
         {
           "group": "io.jmix.businesscalendar",
@@ -1375,6 +1518,12 @@
           "artifactVersions": [
             "1.4.999"
           ]
+        },
+        {
+          "platformRequirement": "1.5",
+          "artifactVersions": [
+            "1.5.999"
+          ]
         }
       ],
       "commercial": true,
@@ -1390,7 +1539,7 @@
         "Features"
       ],
       "vendor": "Haulmont",
-      "updateDateTime": 1662619837000,
+      "updateDateTime": 1675072743000,
       "dependencies": [
         {
           "group": "io.jmix.notifications",
@@ -1421,6 +1570,12 @@
           "artifactVersions": [
             "1.4.999"
           ]
+        },
+        {
+          "platformRequirement": "1.5",
+          "artifactVersions": [
+            "1.5.999"
+          ]
         }
       ],
       "commercial": true,
@@ -1437,12 +1592,24 @@
         "System"
       ],
       "vendor": "Haulmont",
-      "updateDateTime": 1662619577000,
+      "updateDateTime": 1675072326000,
       "dependencies": [
         {
           "group": "io.jmix.quartz",
           "name": "jmix-quartz-starter",
           "main": true
+        },
+        {
+          "group": "io.jmix.quartz",
+          "name": "jmix-quartz-ui-starter",
+          "main": true,
+          "versionRange": "(1.4.999-SNAPSHOT,)"
+        },
+        {
+          "group": "io.jmix.quartz",
+          "name": "jmix-quartz-flowui-starter",
+          "main": true,
+          "versionRange": "(1.4.999-SNAPSHOT,)"
         }
       ],
       "compatibilityList": [
@@ -1463,6 +1630,12 @@
           "artifactVersions": [
             "1.4.999"
           ]
+        },
+        {
+          "platformRequirement": "1.5",
+          "artifactVersions": [
+            "1.5.999"
+          ]
         }
       ],
       "commercial": false,
@@ -1479,7 +1652,7 @@
         "Security"
       ],
       "vendor": "Haulmont",
-      "updateDateTime": 1662619575000,
+      "updateDateTime": 1675072324000,
       "dependencies": [
         {
           "group": "io.jmix.oidc",
@@ -1505,6 +1678,12 @@
           "artifactVersions": [
             "1.4.999"
           ]
+        },
+        {
+          "platformRequirement": "1.5",
+          "artifactVersions": [
+            "1.5.999"
+          ]
         }
       ],
       "commercial": false,
@@ -1520,7 +1699,7 @@
         "UI"
       ],
       "vendor": "Haulmont",
-      "updateDateTime": 1662619563000,
+      "updateDateTime": 1675072312000,
       "dependencies": [
         {
           "group": "io.jmix.emailtemplates",
@@ -1569,6 +1748,12 @@
           "artifactVersions": [
             "1.4.999"
           ]
+        },
+        {
+          "platformRequirement": "1.5",
+          "artifactVersions": [
+            "1.5.999"
+          ]
         }
       ],
       "commercial": false,
@@ -1584,7 +1769,7 @@
         "Features"
       ],
       "vendor": "Haulmont",
-      "updateDateTime": 1662619535000,
+      "updateDateTime": 1675072281000,
       "dependencies": [
         {
           "group": "io.jmix.appsettings",
@@ -1595,6 +1780,12 @@
           "group": "io.jmix.appsettings",
           "name": "jmix-appsettings-ui-starter",
           "main": true
+        },
+        {
+          "group": "io.jmix.appsettings",
+          "name": "jmix-appsettings-flowui-starter",
+          "main": true,
+          "versionRange": "(1.4.999-SNAPSHOT,)"
         }
       ],
       "compatibilityList": [
@@ -1615,6 +1806,12 @@
           "artifactVersions": [
             "1.4.999"
           ]
+        },
+        {
+          "platformRequirement": "1.5",
+          "artifactVersions": [
+            "1.5.999"
+          ]
         }
       ],
       "commercial": false,
@@ -1630,7 +1827,7 @@
         "Localization"
       ],
       "vendor": "Panos Bariamis",
-      "updateDateTime": 1662619534000,
+      "updateDateTime": 1675072280000,
       "dependencies": [
         {
           "group": "io.jmix.translations",
@@ -1656,6 +1853,12 @@
           "artifactVersions": [
             "1.4.999"
           ]
+        },
+        {
+          "platformRequirement": "1.5",
+          "artifactVersions": [
+            "1.5.999"
+          ]
         }
       ],
       "commercial": false,
@@ -1671,7 +1874,7 @@
         "UI"
       ],
       "vendor": "Panos Bariamis",
-      "updateDateTime": 1648108800000,
+      "updateDateTime": 1667635200000,
       "dependencies": [
         {
           "group": "gr.netmechanics.jmix",
@@ -1683,7 +1886,7 @@
         {
           "platformRequirement": "1.0",
           "artifactVersions": [
-            "1.0.0"
+            "1.2.1"
           ]
         }
       ],
@@ -1700,7 +1903,7 @@
         "UI"
       ],
       "vendor": "JmixCn Team",
-      "updateDateTime": 1651824000000,
+      "updateDateTime": 1667116800000,
       "dependencies": [
         {
           "group": "io.jmix.gradle",
@@ -1729,6 +1932,165 @@
       "weight": 1
     },
     {
+      "id": "kurdish-translation",
+      "name": "Kurdish Translation",
+      "about": "Kurdish translation of the framework.",
+      "description": "## Overview\n\nThis add-on provides the Kurdish (Sorani) translation of the framework messages and the localized set of data formats.\n\n## Usage\n\nAfter installation, add Kurdish (Sorani - ckb) locale using the Locales tab of the Project Properties window in Studio.\n\n Kurdish translation of the framework.",
+      "category": "Add-on",
+      "tags": [
+        "Localization"
+      ],
+      "vendor": "Swara",
+      "updateDateTime": 1675072278000,
+      "dependencies": [
+        {
+          "group": "io.jmix.translations",
+          "name": "jmix-translations-ckb",
+          "main": true
+        }
+      ],
+      "compatibilityList": [
+        {
+          "platformRequirement": "0.9",
+          "artifactVersions": [
+            "0.9.999"
+          ]
+        },
+        {
+          "platformRequirement": "1.4",
+          "artifactVersions": [
+            "1.4.999"
+          ]
+        },
+        {
+          "platformRequirement": "1.5",
+          "artifactVersions": [
+            "1.5.999"
+          ]
+        }
+      ],
+      "commercial": false,
+      "weight": 1
+    },
+    {
+      "id": "dutch-translation",
+      "name": "Dutch Translation",
+      "about": "Dutch translation of the framework.",
+      "description": "## Overview\n\nThis add-on provides the Dutch translation of the framework messages and the localized set of data formats.\n\n## Usage\n\nAfter installation, add Dutch (nl) locale using the Locales tab of the Project Properties window in Studio.\n\n Dutch translation of the framework.",
+      "category": "Add-on",
+      "tags": [
+        "Localization"
+      ],
+      "vendor": "EZ Software",
+      "updateDateTime": 1675072283000,
+      "dependencies": [
+        {
+          "group": "io.jmix.translations",
+          "name": "jmix-translations-nl",
+          "main": true
+        }
+      ],
+      "compatibilityList": [
+        {
+          "platformRequirement": "0.9",
+          "artifactVersions": [
+            "0.9.999"
+          ]
+        },
+        {
+          "platformRequirement": "1.4",
+          "artifactVersions": [
+            "1.4.999"
+          ]
+        },
+        {
+          "platformRequirement": "1.5",
+          "artifactVersions": [
+            "1.5.999"
+          ]
+        }
+      ],
+      "commercial": false,
+      "weight": 1
+    },
+    {
+      "id": "french-translation",
+      "name": "French Translation",
+      "about": "French translation of the framework",
+      "description": "## OVERVIEW\n\nThis add-on provides the French translation of the framework messages and the localized set of data formats.\n\n## USAGE\n\nAfter installation, add French (fr) locale using the Locales tab of the Project Properties window in Studio.\n\n ",
+      "category": "Translation",
+      "tags": [
+        "Localization"
+      ],
+      "vendor": "Benoît VALLETTE d'OSIA",
+      "updateDateTime": 1675072281000,
+      "dependencies": [
+        {
+          "group": "io.jmix.translations",
+          "name": "jmix-translations-fr",
+          "main": true
+        }
+      ],
+      "compatibilityList": [
+        {
+          "platformRequirement": "0.9",
+          "artifactVersions": [
+            "0.9.999"
+          ]
+        },
+        {
+          "platformRequirement": "1.5",
+          "artifactVersions": [
+            "1.5.999"
+          ]
+        },
+        {
+          "platformRequirement": "1.4",
+          "artifactVersions": [
+            "1.4.999"
+          ]
+        },
+        {
+          "platformRequirement": "1.3",
+          "artifactVersions": [
+            "1.3.999"
+          ]
+        },
+        {
+          "platformRequirement": "1.2",
+          "artifactVersions": [
+            "1.2.999"
+          ]
+        },
+        {
+          "platformRequirement": "1.1",
+          "artifactVersions": [
+            "1.1.999"
+          ]
+        },
+        {
+          "platformRequirement": "1.0",
+          "artifactVersions": [
+            "1.0.999"
+          ]
+        },
+        {
+          "platformRequirement": "0.2",
+          "artifactVersions": [
+            "0.2.0"
+          ]
+        },
+        {
+          "platformRequirement": "0.3",
+          "artifactVersions": [
+            "0.3.2"
+          ]
+        }
+      ],
+      "commercial": false,
+      "weight": 1
+    },
+    {
       "id": "grapesjs",
       "name": "GrapesJS",
       "about": "A visual HTML editor based on the GrapesJS library.",
@@ -1738,7 +2100,7 @@
         "UI"
       ],
       "vendor": "Haulmont",
-      "updateDateTime": 1662619568000,
+      "updateDateTime": 1675072318000,
       "dependencies": [
         {
           "group": "io.jmix.grapesjs",
@@ -1788,6 +2150,12 @@
           "artifactVersions": [
             "1.4.999"
           ]
+        },
+        {
+          "platformRequirement": "1.5",
+          "artifactVersions": [
+            "1.5.999"
+          ]
         }
       ],
       "commercial": false,
@@ -1803,7 +2171,7 @@
         "Localization"
       ],
       "vendor": "Haulmont",
-      "updateDateTime": 1662619537000,
+      "updateDateTime": 1675072284000,
       "dependencies": [
         {
           "group": "io.jmix.translations",
@@ -1859,6 +2227,12 @@
           "artifactVersions": [
             "1.4.999"
           ]
+        },
+        {
+          "platformRequirement": "1.5",
+          "artifactVersions": [
+            "1.5.999"
+          ]
         }
       ],
       "commercial": false,
@@ -1874,7 +2248,7 @@
         "Localization"
       ],
       "vendor": "Haulmont",
-      "updateDateTime": 1662619532000,
+      "updateDateTime": 1675072279000,
       "dependencies": [
         {
           "group": "io.jmix.translations",
@@ -1912,6 +2286,12 @@
           "artifactVersions": [
             "1.4.999"
           ]
+        },
+        {
+          "platformRequirement": "1.5",
+          "artifactVersions": [
+            "1.5.999"
+          ]
         }
       ],
       "commercial": false,
@@ -1927,7 +2307,7 @@
         "Localization"
       ],
       "vendor": "Haulmont",
-      "updateDateTime": 1662619537000,
+      "updateDateTime": 1675072284000,
       "dependencies": [
         {
           "group": "io.jmix.translations",
@@ -1965,6 +2345,12 @@
           "artifactVersions": [
             "1.4.999"
           ]
+        },
+        {
+          "platformRequirement": "1.5",
+          "artifactVersions": [
+            "1.5.999"
+          ]
         }
       ],
       "commercial": false,
@@ -1980,7 +2366,7 @@
         "Localization"
       ],
       "vendor": "Sorin Federiga",
-      "updateDateTime": 1662619536000,
+      "updateDateTime": 1675072283000,
       "dependencies": [
         {
           "group": "io.jmix.translations",
@@ -2011,6 +2397,12 @@
           "platformRequirement": "1.4",
           "artifactVersions": [
             "1.4.999"
+          ]
+        },
+        {
+          "platformRequirement": "1.5",
+          "artifactVersions": [
+            "1.5.999"
           ]
         }
       ],
