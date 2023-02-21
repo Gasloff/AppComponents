@@ -893,7 +893,20 @@
         {
           "group": "io.jmix.ui",
           "name": "jmix-ui-export-starter",
-          "main": true
+          "main": true,
+          "versionRange": "(,1.4.999-SNAPSHOT]"
+        },
+        {
+          "group": "io.jmix.gridexport",
+          "name": "jmix-gridexport-ui-starter",
+          "main": true,
+          "versionRange": "(1.4.999-SNAPSHOT,)"
+        },
+        {
+          "group": "io.jmix.gridexport",
+          "name": "jmix-gridexport-flowui-starter",
+          "main": true,
+          "versionRange": "(1.4.999-SNAPSHOT,)"
         }
       ],
       "compatibilityList": [
