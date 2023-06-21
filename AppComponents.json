@@ -1,75 +1,93 @@
 {
   "appComponents": [
     {
-      "id": "bpm",
-      "name": "BPM",
-      "about": "Provides seamless integration of a BPM engine into your project.",
-      "description": "## Overview\nThe BPM add-on provides seamless integration of a BPM engine into your project, extending it with multiple powerful features.\n\nThe add-on allows you to describe business process steps right in the application using the integrated BPMN 2.0 modeler. Being a part of the application, it enables seamless integration with the runtime application parts and visual process customizing. For example, to specify which service method should be invoked at a particular process step, you just need to select a Spring bean name and a method from a drop-down list.\n\nUsers may interact with running process instances using process forms. For simple cases, you can declare input dialogs right in the modeler. Also, you can use screens based on Jmix UI to create process forms of any complexity.\n\n## Features\n- The embedded light-weight [Flowable](https://flowable.org) runtime engine. You are free to use the Flowable API directly, or you may use an API layer provided by the BPM addon.\n- Integrated BPMN 2.0 visual designer based on [bpmn-js](https://bpmn.io) framework.\n- Integrated DMN 1.1 decision table designer for complex decision logic.\n- Two types of process forms:\n       a) Input dialogs that can be created at runtime in the process modeler\n       b) Design-time defined Jmix UI screens\n- Administrative screens for managing running processes provide a ready solution to:\n       a) view all running process instances\n       b) reassign user tasks\n       c) modify process variables’ values\n       d) investigate failed jobs\n       e) analyze processes execution history, etc.\n- API for working with business processes from the code\n\n## Video Tutorial\n<iframe width=\"770\" height=\"433\" src=\"https://youtube.com/embed/q_xtfDmR844\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>\n\n Get a free trial of the add-on on a website. [link](https://www.jmix.io/marketplace/bpm/)",
-      "category": "Add-on",
-      "tags": [
-        "Features"
-      ],
-      "vendor": "Haulmont",
-      "updateDateTime": 1675072737000,
-      "dependencies": [
-        {
-          "group": "io.jmix.bpm",
-          "name": "jmix-bpm-starter",
-          "main": true
+            "id": "bpm",
+            "name": "BPM",
+            "about": "Provides seamless integration of a BPM engine into your project.",
+            "description": "## Overview\nThe BPM add-on provides seamless integration of a BPM engine into your project, extending it with multiple powerful features.\n\nThe add-on allows you to describe business process steps right in the application using the integrated BPMN 2.0 modeler. Being a part of the application, it enables seamless integration with the runtime application parts and visual process customizing. For example, to specify which service method should be invoked at a particular process step, you just need to select a Spring bean name and a method from a drop-down list.\n\nUsers may interact with running process instances using process forms. For simple cases, you can declare input dialogs right in the modeler. Also, you can use screens based on Jmix UI to create process forms of any complexity.\n\n## Features\n- The embedded light-weight <a href=\"https://flowable.org\" target=\"_blank\">Flowable</a> runtime engine. You are free to use the Flowable API directly, or you may use an API layer provided by the BPM addon.\n- Integrated BPMN 2.0 visual designer based on <a href=\"https://bpmn.io\" target=\"_blank\">bpmn-js</a> framework.\n- Integrated DMN 1.1 decision table designer for complex decision logic.\n- Two types of process forms:\n       a) Input dialogs that can be created at runtime in the process modeler\n       b) Design-time defined Jmix UI screens\n- Administrative screens for managing running processes provide a ready solution to:\n       a) view all running process instances\n       b) reassign user tasks\n       c) modify process variables’ values\n       d) investigate failed jobs\n       e) analyze processes execution history, etc.\n- API for working with business processes from the code\n\n## License\nBPM is included in the Enterprise plan. Please find more details on the [Pricing page](/subscription-plans-and-prices/).\n\n## Video Tutorial\n<iframe width=\"770\" height=\"433\" src=\"https://youtube.com/embed/q_xtfDmR844\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>\n\n Get a free trial of the add-on on a website. [link](https://www.jmix.io/marketplace/bpm/)",
+            "category": "Add-on",
+            "tags": [
+                "Features"
+            ],
+            "vendor": "Haulmont",
+            "updateDateTime": 1684143800000,
+            "dependencies": [
+                {
+                    "group": "io.jmix.bpm",
+                    "name": "jmix-bpm-starter",
+                    "main": true
+                },
+                {
+                    "group": "io.jmix.bpm",
+                    "name": "jmix-bpm-ui-starter",
+                    "main": true
+                },
+                {
+                    "group": "io.jmix.bpm",
+                    "name": "jmix-bpm-flowui-starter",
+                    "versionRange": "(1.99.999-SNAPSHOT,)",
+                    "main": true
+                }
+            ],
+            "compatibilityList": [
+                {
+                    "platformRequirement": "0.9",
+                    "artifactVersions": [
+                        "0.9.0"
+                    ]
+                },
+                {
+                    "platformRequirement": "1.0",
+                    "artifactVersions": [
+                        "1.0.999"
+                    ]
+                },
+                {
+                    "platformRequirement": "1.1",
+                    "artifactVersions": [
+                        "1.1.999"
+                    ]
+                },
+                {
+                    "platformRequirement": "1.2",
+                    "artifactVersions": [
+                        "1.2.999"
+                    ]
+                },
+                {
+                    "platformRequirement": "1.3",
+                    "artifactVersions": [
+                        "1.3.999"
+                    ]
+                },
+                {
+                    "platformRequirement": "1.4",
+                    "artifactVersions": [
+                        "1.4.999"
+                    ]
+                },
+                {
+                    "platformRequirement": "1.5",
+                    "artifactVersions": [
+                        "1.5.999"
+                    ]
+                },
+                {
+                    "platformRequirement": "1.6",
+                    "artifactVersions": [
+                        "1.6.999"
+                    ]
+                },
+                {
+                    "platformRequirement": "2.0",
+                    "artifactVersions": [
+                        "2.0.999"
+                    ]
+                }
+            ],
+            "commercial": true,
+            "weight": 950
         },
-        {
-          "group": "io.jmix.bpm",
-          "name": "jmix-bpm-ui-starter",
-          "main": true
-        }
-      ],
-      "compatibilityList": [
-        {
-          "platformRequirement": "0.9",
-          "artifactVersions": [
-            "0.9.0"
-          ]
-        },
-        {
-          "platformRequirement": "1.0",
-          "artifactVersions": [
-            "1.0.999"
-          ]
-        },
-        {
-          "platformRequirement": "1.1",
-          "artifactVersions": [
-            "1.1.999"
-          ]
-        },
-        {
-          "platformRequirement": "1.2",
-          "artifactVersions": [
-            "1.2.999"
-          ]
-        },
-        {
-          "platformRequirement": "1.3",
-          "artifactVersions": [
-            "1.3.999"
-          ]
-        },
-        {
-          "platformRequirement": "1.4",
-          "artifactVersions": [
-            "1.4.999"
-          ]
-        },
-        {
-          "platformRequirement": "1.5",
-          "artifactVersions": [
-            "1.5.999"
-          ]
-        }
-      ],
-      "commercial": true,
-      "weight": 950
-    },
     {
       "id": "charts",
       "name": "Charts",
@@ -371,87 +389,105 @@
       "weight": 665
     },
     {
-      "id": "email-sending",
-      "name": "Email",
-      "about": "Provides email sending functionality.",
-      "description": "## Overview\nThe addon provides email sending facilities.\n\n## Features\n- Synchronous or asynchronous sending. In case of synchronous sending, the calling code waits till the message is sent to the SMTP server. In case of asynchronous sending, the message is persisted to the database and the control is returned immediately to the calling code. The actual sending is done later by a scheduled task.\n- Reliable tracking of message sending timestamp or errors in the database for both synchronous and asynchronous modes.\n- User interface to search and view information about sent messages, including all message attributes and content, sending status and the number of attempts.\n\n ",
-      "category": "Add-on",
-      "tags": [
-        "Features"
-      ],
-      "vendor": "Haulmont",
-      "updateDateTime": 1675072310000,
-      "dependencies": [
-        {
-          "group": "io.jmix.email",
-          "name": "jmix-email-starter",
-          "main": true
+            "id": "email-sending",
+            "name": "Email",
+            "about": "Provides email sending functionality.",
+            "description": "## Overview\nThe addon provides email sending facilities.\n\n## Features\n- Synchronous or asynchronous sending. In case of synchronous sending, the calling code waits till the message is sent to the SMTP server. In case of asynchronous sending, the message is persisted to the database and the control is returned immediately to the calling code. The actual sending is done later by a scheduled task.\n- Reliable tracking of message sending timestamp or errors in the database for both synchronous and asynchronous modes.\n- User interface to search and view information about sent messages, including all message attributes and content, sending status and the number of attempts.\n\n ",
+            "category": "Add-on",
+            "tags": [
+                "Features"
+            ],
+            "vendor": "Haulmont",
+            "updateDateTime": 1684143497000,
+            "dependencies": [
+                {
+                    "group": "io.jmix.email",
+                    "name": "jmix-email-starter",
+                    "main": true
+                },
+                {
+                    "group": "io.jmix.email",
+                    "name": "jmix-email-ui-starter",
+                    "main": true
+                },
+                {
+                    "group": "io.jmix.email",
+                    "name": "jmix-email-flowui-starter",
+                    "versionRange": "(1.99.999-SNAPSHOT,)",
+                    "main": true
+                }
+            ],
+            "compatibilityList": [
+                {
+                    "platformRequirement": "0.2",
+                    "artifactVersions": [
+                        "0.2.0"
+                    ]
+                },
+                {
+                    "platformRequirement": "0.3",
+                    "artifactVersions": [
+                        "0.3.2"
+                    ]
+                },
+                {
+                    "platformRequirement": "0.9",
+                    "artifactVersions": [
+                        "0.9.999"
+                    ]
+                },
+                {
+                    "platformRequirement": "1.0",
+                    "artifactVersions": [
+                        "1.0.999"
+                    ]
+                },
+                {
+                    "platformRequirement": "1.1",
+                    "artifactVersions": [
+                        "1.1.999"
+                    ]
+                },
+                {
+                    "platformRequirement": "1.2",
+                    "artifactVersions": [
+                        "1.2.999"
+                    ]
+                },
+                {
+                    "platformRequirement": "1.3",
+                    "artifactVersions": [
+                        "1.3.999"
+                    ]
+                },
+                {
+                    "platformRequirement": "1.4",
+                    "artifactVersions": [
+                        "1.4.999"
+                    ]
+                },
+                {
+                    "platformRequirement": "1.5",
+                    "artifactVersions": [
+                        "1.5.999"
+                    ]
+                },
+                {
+                    "platformRequirement": "1.6",
+                    "artifactVersions": [
+                        "1.6.999"
+                    ]
+                },
+                {
+                    "platformRequirement": "2.0",
+                    "artifactVersions": [
+                        "2.0.999"
+                    ]
+                }
+            ],
+            "commercial": false,
+            "weight": 990
         },
-        {
-          "group": "io.jmix.email",
-          "name": "jmix-email-ui-starter",
-          "main": true
-        }
-      ],
-      "compatibilityList": [
-        {
-          "platformRequirement": "0.2",
-          "artifactVersions": [
-            "0.2.0"
-          ]
-        },
-        {
-          "platformRequirement": "0.3",
-          "artifactVersions": [
-            "0.3.2"
-          ]
-        },
-        {
-          "platformRequirement": "0.9",
-          "artifactVersions": [
-            "0.9.999"
-          ]
-        },
-        {
-          "platformRequirement": "1.0",
-          "artifactVersions": [
-            "1.0.999"
-          ]
-        },
-        {
-          "platformRequirement": "1.1",
-          "artifactVersions": [
-            "1.1.999"
-          ]
-        },
-        {
-          "platformRequirement": "1.2",
-          "artifactVersions": [
-            "1.2.999"
-          ]
-        },
-        {
-          "platformRequirement": "1.3",
-          "artifactVersions": [
-            "1.3.999"
-          ]
-        },
-        {
-          "platformRequirement": "1.4",
-          "artifactVersions": [
-            "1.4.999"
-          ]
-        },
-        {
-          "platformRequirement": "1.5",
-          "artifactVersions": [
-            "1.5.999"
-          ]
-        }
-      ],
-      "commercial": false,
-      "weight": 990
-    },
     {
       "id": "audit",
       "name": "Audit",
@@ -1034,80 +1070,98 @@
       "weight": 1
     },
     {
-      "id": "reports",
-      "name": "Reports",
-      "about": "Integrated report generator.",
-      "description": "## Overview\n\nThe add-on provides a complete solution for report generation in Jmix applications. It supports the following features:\n\n- Generating reports from templates created in office formats (DOCX, XLSX, ODT) or HTML.\n- Defining the report data sources at runtime using a step-by-step wizard or by manually coding SQL, JPQL or Groovy scripts.\n- Generating output documents in office formats or HTML, and converting them to PDF.\n- Creating complex XLSX reports: multi-tiered reports, reports with data aggregation, crosstab reports.\n- Using diagrams and formulas in XLSX reports.\n- Saving and viewing report execution history.\n- Report access rights.\n- REST API to execute reports.\n\n ",
-      "category": "Add-on",
-      "tags": [
-        "Features"
-      ],
-      "vendor": "Haulmont",
-      "updateDateTime": 1675072328000,
-      "dependencies": [
-        {
-          "group": "io.jmix.reports",
-          "name": "jmix-reports-starter",
-          "main": true
+            "id": "reports",
+            "name": "Reports",
+            "about": "Integrated report generator.",
+            "description": "## Overview\n\nThe add-on provides a complete solution for report generation in Jmix applications. It supports the following features:\n\n- Generating reports from templates created in office formats (DOCX, XLSX, ODT) or HTML.\n- Defining the report data sources at runtime using a step-by-step wizard or by manually coding SQL, JPQL or Groovy scripts.\n- Generating output documents in office formats or HTML, and converting them to PDF.\n- Creating complex XLSX reports: multi-tiered reports, reports with data aggregation, crosstab reports.\n- Using diagrams and formulas in XLSX reports.\n- Saving and viewing report execution history.\n- Report access rights.\n- REST API to execute reports.\n\n ",
+            "category": "Add-on",
+            "tags": [
+                "Features"
+            ],
+            "vendor": "Haulmont",
+            "updateDateTime": 1684143518000,
+            "dependencies": [
+                {
+                    "group": "io.jmix.reports",
+                    "name": "jmix-reports-starter",
+                    "main": true
+                },
+                {
+                    "group": "io.jmix.reports",
+                    "name": "jmix-reports-ui-starter",
+                    "main": true
+                },
+                {
+                    "group": "io.jmix.reports",
+                    "name": "jmix-reports-rest-starter",
+                    "main": true
+                },
+                {
+                    "group": "io.jmix.reports",
+                    "name": "jmix-reports-flowui-starter",
+                    "versionRange": "(1.99.999-SNAPSHOT,)",
+                    "main": true
+                }
+            ],
+            "compatibilityList": [
+                {
+                    "platformRequirement": "0.9",
+                    "artifactVersions": [
+                        "0.9.999"
+                    ]
+                },
+                {
+                    "platformRequirement": "1.0",
+                    "artifactVersions": [
+                        "1.0.999"
+                    ]
+                },
+                {
+                    "platformRequirement": "1.1",
+                    "artifactVersions": [
+                        "1.1.999"
+                    ]
+                },
+                {
+                    "platformRequirement": "1.2",
+                    "artifactVersions": [
+                        "1.2.999"
+                    ]
+                },
+                {
+                    "platformRequirement": "1.3",
+                    "artifactVersions": [
+                        "1.3.999"
+                    ]
+                },
+                {
+                    "platformRequirement": "1.4",
+                    "artifactVersions": [
+                        "1.4.999"
+                    ]
+                },
+                {
+                    "platformRequirement": "1.5",
+                    "artifactVersions": [
+                        "1.5.999"
+                    ]
+                },
+                {
+                    "platformRequirement": "1.6",
+                    "artifactVersions": [
+                        "1.6.999"
+                    ]
+                },
+                {
+                    "platformRequirement": "2.0",
+                    "artifactVersions": [
+                        "2.0.999"
+                    ]
+                }
+            ],
+            "commercial": false,
+            "weight": 1
         },
-        {
-          "group": "io.jmix.reports",
-          "name": "jmix-reports-ui-starter",
-          "main": true
-        },
-        {
-          "group": "io.jmix.reports",
-          "name": "jmix-reports-rest-starter",
-          "main": true
-        }
-      ],
-      "compatibilityList": [
-        {
-          "platformRequirement": "0.9",
-          "artifactVersions": [
-            "0.9.999"
-          ]
-        },
-        {
-          "platformRequirement": "1.0",
-          "artifactVersions": [
-            "1.0.999"
-          ]
-        },
-        {
-          "platformRequirement": "1.1",
-          "artifactVersions": [
-            "1.1.999"
-          ]
-        },
-        {
-          "platformRequirement": "1.2",
-          "artifactVersions": [
-            "1.2.999"
-          ]
-        },
-        {
-          "platformRequirement": "1.3",
-          "artifactVersions": [
-            "1.3.999"
-          ]
-        },
-        {
-          "platformRequirement": "1.4",
-          "artifactVersions": [
-            "1.4.999"
-          ]
-        },
-        {
-          "platformRequirement": "1.5",
-          "artifactVersions": [
-            "1.5.999"
-          ]
-        }
-      ],
-      "commercial": false,
-      "weight": 1
-    },
     {
       "id": "multitenancy",
       "name": "Multitenancy",
@@ -1491,57 +1545,75 @@
       "weight": 1
     },
     {
-      "id": "business-calendars",
-      "name": "Business Calendars",
-      "about": "Provides API and UI for working with business days and hours.",
-      "description": "## Overview\n\nThe add-on allows you to manage business calendars containing holidays, scheduled and additional business days. Configured business calendars provide API to work with business days and hours.\n\nBusiness calendars can be defined at design time using annotated Java interfaces, or created at run time through the UI and stored in the database.\n\nThe business calendar API allows you to check if a date and time moment is a working hour, and provides date/time arithmetics considering business hours.\n\n Get a free trial of the add-on on a website. [link](https://www.jmix.io/marketplace/business-calendars/)",
-      "category": "Add-on",
-      "tags": [
-        "Features"
-      ],
-      "vendor": "Haulmont",
-      "updateDateTime": 1675072739000,
-      "dependencies": [
-        {
-          "group": "io.jmix.businesscalendar",
-          "name": "jmix-businesscalendar-starter",
-          "main": true
+            "id": "business-calendars",
+            "name": "Business Calendars",
+            "about": "Provides API and UI for working with business days and hours.",
+            "description": "## Overview\n\nThe add-on allows you to manage business calendars containing holidays, scheduled and additional business days. Configured business calendars provide API to work with business days and hours.\n\nBusiness calendars can be defined at design time using annotated Java interfaces, or created at run time through the UI and stored in the database.\n\nThe business calendar API allows you to check if a date and time moment is a working hour, and provides date/time arithmetics considering business hours.\n\n## License\nBusiness Calendars is included in the Enterprise plan. Please find more details on the [Pricing page](/subscription-plans-and-prices/).\n\n Get a free trial of the add-on on a website. [link](https://www.jmix.io/marketplace/business-calendars/)",
+            "category": "Add-on",
+            "tags": [
+                "Features"
+            ],
+            "vendor": "Haulmont",
+            "updateDateTime": 1684143802000,
+            "dependencies": [
+                {
+                    "group": "io.jmix.businesscalendar",
+                    "name": "jmix-businesscalendar-starter",
+                    "main": true
+                },
+                {
+                    "group": "io.jmix.businesscalendar",
+                    "name": "jmix-businesscalendar-ui-starter",
+                    "main": true
+                },
+                {
+                    "group": "io.jmix.businesscalendar",
+                    "name": "jmix-businesscalendar-flowui-starter",
+                    "versionRange": "(1.99.999-SNAPSHOT,)",
+                    "main": true
+                }
+            ],
+            "compatibilityList": [
+                {
+                    "platformRequirement": "1.2",
+                    "artifactVersions": [
+                        "1.2.999"
+                    ]
+                },
+                {
+                    "platformRequirement": "1.3",
+                    "artifactVersions": [
+                        "1.3.999"
+                    ]
+                },
+                {
+                    "platformRequirement": "1.4",
+                    "artifactVersions": [
+                        "1.4.999"
+                    ]
+                },
+                {
+                    "platformRequirement": "1.5",
+                    "artifactVersions": [
+                        "1.5.999"
+                    ]
+                },
+                {
+                    "platformRequirement": "1.6",
+                    "artifactVersions": [
+                        "1.6.999"
+                    ]
+                },
+                {
+                    "platformRequirement": "2.0",
+                    "artifactVersions": [
+                        "2.0.999"
+                    ]
+                }
+            ],
+            "commercial": true,
+            "weight": 1
         },
-        {
-          "group": "io.jmix.businesscalendar",
-          "name": "jmix-businesscalendar-ui-starter",
-          "main": true
-        }
-      ],
-      "compatibilityList": [
-        {
-          "platformRequirement": "1.2",
-          "artifactVersions": [
-            "1.2.999"
-          ]
-        },
-        {
-          "platformRequirement": "1.3",
-          "artifactVersions": [
-            "1.3.999"
-          ]
-        },
-        {
-          "platformRequirement": "1.4",
-          "artifactVersions": [
-            "1.4.999"
-          ]
-        },
-        {
-          "platformRequirement": "1.5",
-          "artifactVersions": [
-            "1.5.999"
-          ]
-        }
-      ],
-      "commercial": true,
-      "weight": 1
-    },
     {
       "id": "notifications",
       "name": "Notifications",
