@@ -747,86 +747,104 @@
       "weight": 960
     },
     {
-      "id": "rest-api",
-      "name": "REST API",
-      "about": "A generic REST API that allows you to work with entities and services.",
-      "description": "## Overview\nJmix provides a generic REST API that allows you to work with data model entities and business services without writing REST controllers on the backend. It automatically exposes endpoints for the following functionality:\n\n- CRUD operations on entities.\n- Calling of registered service methods.\n- Execution of predefined JPQL queries.\n- Uploading and downloading files.\n- Returning information about the data model.\n- Returning information about the current user and their permissions.\n\nREST API uses the OAuth2 protocol for authentication and supports anonymous access. All REST API endpoints respect data access constraints imposed by [security](https://docs.jmix.io/jmix/latest/security/index.html).\n\n\n\n\n ",
-      "category": "Add-on",
-      "tags": [
-        "Integration"
-      ],
-      "vendor": "Haulmont",
-      "updateDateTime": 1675072330000,
-      "dependencies": [
-        {
-          "group": "io.jmix.rest",
-          "name": "jmix-rest-starter",
-          "main": true
+            "id": "rest-api",
+            "name": "REST API",
+            "about": "A generic REST API that allows you to work with entities and services.",
+            "description": "## Overview\nJmix provides a generic REST API that allows you to work with data model entities and business services without writing REST controllers on the backend. It automatically exposes endpoints for the following functionality:\n\n- CRUD operations on entities.\n- Calling of registered service methods.\n- Execution of predefined JPQL queries.\n- Uploading and downloading files.\n- Returning information about the data model.\n- Returning information about the current user and their permissions.\n\nREST API uses the OAuth2 protocol for authentication and supports anonymous access. All REST API endpoints respect data access constraints imposed by <a href=\"https://docs.jmix.io/jmix/latest/security/index.html\" target=\"_blank\">security</a>.\n\n\n\n\n ",
+            "category": "Add-on",
+            "tags": [
+                "Integration"
+            ],
+            "vendor": "Haulmont",
+            "updateDateTime": 1684143519000,
+            "dependencies": [
+                {
+                    "group": "io.jmix.rest",
+                    "name": "jmix-rest-starter",
+                    "main": true
+                },
+                {
+                    "group": "io.jmix.security",
+                    "name": "jmix-security-oauth2-starter",
+                    "versionRange": "(,1.99.999-SNAPSHOT]"
+                },
+                {
+                    "group": "io.jmix.authserver",
+                    "name": "jmix-authserver-starter",
+                    "versionRange": "(1.99.999-SNAPSHOT,)"
+                }
+            ],
+            "compatibilityList": [
+                {
+                    "platformRequirement": "0.9",
+                    "artifactVersions": [
+                        "0.9.999"
+                    ]
+                },
+                {
+                    "platformRequirement": "1.6",
+                    "artifactVersions": [
+                        "1.6.999"
+                    ]
+                },
+                {
+                    "platformRequirement": "1.5",
+                    "artifactVersions": [
+                        "1.5.999"
+                    ]
+                },
+                {
+                    "platformRequirement": "1.4",
+                    "artifactVersions": [
+                        "1.4.999"
+                    ]
+                },
+                {
+                    "platformRequirement": "1.3",
+                    "artifactVersions": [
+                        "1.3.999"
+                    ]
+                },
+                {
+                    "platformRequirement": "1.2",
+                    "artifactVersions": [
+                        "1.2.999"
+                    ]
+                },
+                {
+                    "platformRequirement": "1.1",
+                    "artifactVersions": [
+                        "1.1.999"
+                    ]
+                },
+                {
+                    "platformRequirement": "2.0",
+                    "artifactVersions": [
+                        "2.0.999"
+                    ]
+                },
+                {
+                    "platformRequirement": "1.0",
+                    "artifactVersions": [
+                        "1.0.999"
+                    ]
+                },
+                {
+                    "platformRequirement": "0.2",
+                    "artifactVersions": [
+                        "0.2.0"
+                    ]
+                },
+                {
+                    "platformRequirement": "0.3",
+                    "artifactVersions": [
+                        "0.3.2"
+                    ]
+                }
+            ],
+            "commercial": false,
+            "weight": 1000
         },
-        {
-          "group": "io.jmix.security",
-          "name": "jmix-security-oauth2-starter"
-        }
-      ],
-      "compatibilityList": [
-        {
-          "platformRequirement": "0.2",
-          "artifactVersions": [
-            "0.2.0"
-          ]
-        },
-        {
-          "platformRequirement": "0.3",
-          "artifactVersions": [
-            "0.3.2"
-          ]
-        },
-        {
-          "platformRequirement": "0.9",
-          "artifactVersions": [
-            "0.9.999"
-          ]
-        },
-        {
-          "platformRequirement": "1.0",
-          "artifactVersions": [
-            "1.0.999"
-          ]
-        },
-        {
-          "platformRequirement": "1.1",
-          "artifactVersions": [
-            "1.1.999"
-          ]
-        },
-        {
-          "platformRequirement": "1.2",
-          "artifactVersions": [
-            "1.2.999"
-          ]
-        },
-        {
-          "platformRequirement": "1.3",
-          "artifactVersions": [
-            "1.3.999"
-          ]
-        },
-        {
-          "platformRequirement": "1.4",
-          "artifactVersions": [
-            "1.4.999"
-          ]
-        },
-        {
-          "platformRequirement": "1.5",
-          "artifactVersions": [
-            "1.5.999"
-          ]
-        }
-      ],
-      "commercial": false,
-      "weight": 1000
-    },
     {
       "id": "maps",
       "name": "Maps",
