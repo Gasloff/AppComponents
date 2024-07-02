@@ -1051,8 +1051,7 @@
         {
           "group": "io.jmix.authserver",
           "name": "jmix-authserver-starter",
-          "versionRange": "(1.99.999-SNAPSHOT,2.2.999-SNAPSHOT]",
-          "main": true
+          "versionRange": "(1.99.999-SNAPSHOT,2.2.999-SNAPSHOT]"
         }
       ],
       "compatibilityList": [
@@ -3904,24 +3903,6 @@
         }
       ],
       "compatibilityList": [
-        {
-          "platformRequirement": "2.0",
-          "artifactVersions": [
-            "2.0.999"
-          ]
-        },
-        {
-          "platformRequirement": "2.1",
-          "artifactVersions": [
-            "2.1.999"
-          ]
-        },
-        {
-          "platformRequirement": "2.2",
-          "artifactVersions": [
-            "2.2.999"
-          ]
-        },
         {
           "platformRequirement": "2.3",
           "artifactVersions": [
