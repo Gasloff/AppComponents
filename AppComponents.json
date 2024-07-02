@@ -1,105 +1,135 @@
 {
   "appComponents": [
     {
-            "id": "bpm",
-            "name": "BPM",
-            "about": "Provides seamless integration of a BPM engine into your project.",
-            "description": "## Overview\nThe BPM add-on provides seamless integration of a BPM engine into your project, extending it with multiple powerful features.\n\nThe add-on allows you to describe business process steps right in the application using the integrated BPMN 2.0 modeler. Being a part of the application, it enables seamless integration with the runtime application parts and visual process customizing. For example, to specify which service method should be invoked at a particular process step, you just need to select a Spring bean name and a method from a drop-down list.\n\nUsers may interact with running process instances using process forms. For simple cases, you can declare input dialogs right in the modeler. Also, you can use screens based on Jmix UI to create process forms of any complexity.\n\n## Features\n- The embedded light-weight <a href=\"https://flowable.org\" target=\"_blank\">Flowable</a> runtime engine. You are free to use the Flowable API directly, or you may use an API layer provided by the BPM addon.\n- Integrated BPMN 2.0 visual designer based on <a href=\"https://bpmn.io\" target=\"_blank\">bpmn-js</a> framework.\n- Integrated DMN 1.1 decision table designer for complex decision logic.\n- Two types of process forms:\n       a) Input dialogs that can be created at runtime in the process modeler\n       b) Design-time defined Jmix UI screens\n- Administrative screens for managing running processes provide a ready solution to:\n       a) view all running process instances\n       b) reassign user tasks\n       c) modify process variables’ values\n       d) investigate failed jobs\n       e) analyze processes execution history, etc.\n- API for working with business processes from the code\n\n## License\nBPM is included in the Enterprise plan. Please find more details on the [Pricing page](/subscription-plans-and-prices/).\n\n## Video Tutorial\n<iframe width=\"770\" height=\"433\" src=\"https://youtube.com/embed/q_xtfDmR844\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>\n\n Get a free trial of the add-on on a website. [link](https://www.jmix.io/marketplace/bpm/)",
-            "category": "Add-on",
-            "tags": [
-                "Features"
-            ],
-            "vendor": "Haulmont",
-            "updateDateTime": 1684143800000,
-            "dependencies": [
-                {
-                    "group": "io.jmix.bpm",
-                    "name": "jmix-bpm-starter",
-                    "main": true
-                },
-                {
-                    "group": "io.jmix.bpm",
-                    "name": "jmix-bpm-ui-starter",
-                    "main": true
-                },
-                {
-                    "group": "io.jmix.bpm",
-                    "name": "jmix-bpm-flowui-starter",
-                    "versionRange": "(1.99.999-SNAPSHOT,)",
-                    "main": true
-                }
-            ],
-            "compatibilityList": [
-                {
-                    "platformRequirement": "0.9",
-                    "artifactVersions": [
-                        "0.9.0"
-                    ]
-                },
-                {
-                    "platformRequirement": "1.0",
-                    "artifactVersions": [
-                        "1.0.999"
-                    ]
-                },
-                {
-                    "platformRequirement": "1.1",
-                    "artifactVersions": [
-                        "1.1.999"
-                    ]
-                },
-                {
-                    "platformRequirement": "1.2",
-                    "artifactVersions": [
-                        "1.2.999"
-                    ]
-                },
-                {
-                    "platformRequirement": "1.3",
-                    "artifactVersions": [
-                        "1.3.999"
-                    ]
-                },
-                {
-                    "platformRequirement": "1.4",
-                    "artifactVersions": [
-                        "1.4.999"
-                    ]
-                },
-                {
-                    "platformRequirement": "1.5",
-                    "artifactVersions": [
-                        "1.5.999"
-                    ]
-                },
-                {
-                    "platformRequirement": "1.6",
-                    "artifactVersions": [
-                        "1.6.999"
-                    ]
-                },
-                {
-                    "platformRequirement": "2.0",
-                    "artifactVersions": [
-                        "2.0.999"
-                    ]
-                }
-            ],
-            "commercial": true,
-            "commercial-21": false,
-            "weight": 950
+      "id": "bpm",
+      "name": "BPM",
+      "about": "Provides seamless integration of a BPM engine into your project.",
+      "description": "## DESCRIPTION\n\nThe BPM add-on integrates the open-source Flowable BPM engine into Jmix, giving new Jmix Studio and administrative tools to design, manage and automate various complex interactions between people and systems.\n\nDevelopers can use the process editor in IntelliJ IDEA Community Edition to import existing BPMN models from external tools or build them from scratch, enriching them with Groovy scripts and Spring beans in a single, integrated environment. No more switching between different tools - get everything connected.\n\nThis way, analytical models, once only used for discussions with business stakeholders, can now be turned into executable processes. The special BPMN Entity Data Task component in Jmix lets you load entities into process variables, modify them, and even create new ones all at application runtime.\n\nYou can implement the user interface in two ways. First, you can use the process editor to easily configure the auto-generated dialog forms for data viewing and entry. Secondly, if you need a custom interface, Jmix Studio lets you develop detailed screen forms to display any data and offer various application functions, tailored to the user's role and access rights.\n\nAs you build Jmix applications, any processes you've developed in Jmix Studio get automatically deployed to the embedded Flowable BPM engine. The tools available with the Addon help in testing and running your corporate web with BPM business logic.\n\nSystem administrators can use the process editor during runtime to modify deployed processes without needing to restart the application, provided these updates don't change the data model or Java-coded business logic. You will find everything you need for administrative purposes - process versioning, migration, logging and monitoring.\n\nThe open-source nature of Jmix, including its BPM add-on, lets you customize and create new components. You can add unique task types to the process model, connect with other systems, or create customized process forms.\n\nThis flexibility gives developers more freedom than typical low-code or BPMS platforms, while greatly reducing the routine work involved in integrating a BPM engine into a Spring Boot application by your team.\n\n## FEATURES\n\n- Flowable and Jmix BPM API methods: allow you to manage the embedded Flowable engine programmatically:\n\n<blockquote>\n\n- Start and stop process instances.\n- Collect data about task execution and process progress.\n- Handle events, process properties, etc.\n\n</blockquote>\n\n- BPMN 2.0 visual designer: is based on the bpmn-js toolkit and available in two options:\n\n<blockquote>\n\n- As an extra tool in Jmix Studio for use in IntelliJ IDEA.\n- As a functional part of your web application, distributable without any licensing costs.\n\n</blockquote>\n\n- Entity Data Task: an extended BPMN component that enables manipulating with Jmix entities directly within the process.\n- Integrated DMN 1.1 decision table designer: allows you to implement complex logic and is accessible both in the IDE and at application runtime.\n- User Interface: you can choose between:\n\n<blockquote>\n\n- Automatically generated dialog process forms, customizable for specific tasks using the process designer.\n- Custom Jmix screens with tailored functionality.\n\n</blockquote>\n\n- Task Manager Component: allows users to view assigned tasks, input necessary data, make decisions (such as approving documents), and mark tasks as completed.\n- Administrative screens: used for managing process definitions and instances, and include capabilities to:\n\n<blockquote>\n\n- View all instances of currently running processes.\n- Change assignees of user tasks.\n- View and modify process variables\n- Access analytics on process execution, including operational and historical data.\n\n</blockquote>\n\n## ADDITIONALLY\n\nAlongside the BPM features, incorporating other add-ons can further enhance your application's capabilities:\n- Quartz – allows scheduled tasks execution, configurable at runtime\n- Business calendar – enables accounting for working hours, which is especially useful in business processes\n- Notifications – allows sending notifications to process participants and supervisory personnel\n- Reports – enables building reports based on operational data and process execution statistics\n\n Get a free trial of the add-on on a website. [link](https://www.jmix.io/marketplace/bpm/)",
+      "category": "Add-on",
+      "tags": [
+        "Features"
+      ],
+      "vendor": "Haulmont",
+      "updateDateTime": 1719389354000,
+      "dependencies": [
+        {
+          "group": "io.jmix.bpm",
+          "name": "jmix-bpm-starter",
+          "main": true
         },
+        {
+          "group": "io.jmix.bpm",
+          "name": "jmix-bpm-ui-starter",
+          "main": true
+        },
+        {
+          "group": "io.jmix.bpm",
+          "name": "jmix-bpm-flowui-starter",
+          "versionRange": "(1.99.999-SNAPSHOT,)",
+          "main": true
+        }
+      ],
+      "compatibilityList": [
+        {
+          "platformRequirement": "0.9",
+          "artifactVersions": [
+            "0.9.0"
+          ]
+        },
+        {
+          "platformRequirement": "1.0",
+          "artifactVersions": [
+            "1.0.999"
+          ]
+        },
+        {
+          "platformRequirement": "1.1",
+          "artifactVersions": [
+            "1.1.999"
+          ]
+        },
+        {
+          "platformRequirement": "1.2",
+          "artifactVersions": [
+            "1.2.999"
+          ]
+        },
+        {
+          "platformRequirement": "1.3",
+          "artifactVersions": [
+            "1.3.999"
+          ]
+        },
+        {
+          "platformRequirement": "1.4",
+          "artifactVersions": [
+            "1.4.999"
+          ]
+        },
+        {
+          "platformRequirement": "1.5",
+          "artifactVersions": [
+            "1.5.999"
+          ]
+        },
+        {
+          "platformRequirement": "1.6",
+          "artifactVersions": [
+            "1.6.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.0",
+          "artifactVersions": [
+            "2.0.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.1",
+          "artifactVersions": [
+            "2.1.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.2",
+          "artifactVersions": [
+            "2.2.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.3",
+          "artifactVersions": [
+            "2.3.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.4",
+          "artifactVersions": [
+            "2.4.999"
+          ]
+        },
+        {
+          "platformRequirement": "3.0",
+          "artifactVersions": [
+            "3.0.999"
+          ]
+        }
+      ],
+      "commercial": true,
+      "commercial-21": false,
+      "weight": 900
+    },
     {
-      "id": "charts",
-      "name": "Charts",
+      "id": "charts1x",
+      "name": "Charts 1.x",
       "about": "Integrates amCharts library in Jmix UI.",
-      "description": "## Overview\nIntegrates amCharts library in Jmix UI.\n\nThe charts add-on is based on the [amCharts](https://www.amcharts.com/) JavaScript library and includes various types of dynamic charts: basic charts such as pie chart, bar chart, serial chart, funnel, etc., as well as advanced charts - stock chart and Gantt chart.\n\n ",
+      "description": "## Overview\nIntegrates amCharts library in Jmix UI.\n\nThe charts add-on is based on the <a href=\"https://www.amcharts.com/\" target=\"_blank\">amCharts</a> JavaScript library and includes various types of dynamic charts: basic charts such as pie chart, bar chart, serial chart, funnel, etc., as well as advanced charts - stock chart and Gantt chart.\n\n Integrates amCharts library in Jmix UI.",
       "category": "Add-on",
       "tags": [
         "UI"
       ],
       "vendor": "Haulmont",
-      "updateDateTime": 1675072294000,
+      "updateDateTime": 1703073832000,
       "dependencies": [
         {
           "group": "io.jmix.ui",
@@ -122,31 +152,19 @@
         {
           "platformRequirement": "0.9",
           "artifactVersions": [
-            "0.9.999"
+            "0.9.1"
           ]
         },
         {
-          "platformRequirement": "1.0",
+          "platformRequirement": "1.5",
           "artifactVersions": [
-            "1.0.999"
+            "1.5.5"
           ]
         },
         {
-          "platformRequirement": "1.1",
+          "platformRequirement": "1.6",
           "artifactVersions": [
-            "1.1.999"
-          ]
-        },
-        {
-          "platformRequirement": "1.2",
-          "artifactVersions": [
-            "1.2.999"
-          ]
-        },
-        {
-          "platformRequirement": "1.3",
-          "artifactVersions": [
-            "1.3.999"
+            "1.6.999"
           ]
         },
         {
@@ -156,26 +174,51 @@
           ]
         },
         {
-          "platformRequirement": "1.5",
+          "platformRequirement": "1.3",
           "artifactVersions": [
-            "1.5.999"
+            "1.3.999"
+          ]
+        },
+        {
+          "platformRequirement": "1.2",
+          "artifactVersions": [
+            "1.2.999"
+          ]
+        },
+        {
+          "platformRequirement": "1.1",
+          "artifactVersions": [
+            "1.1.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.0",
+          "artifactVersions": [
+            "2.0.999"
+          ]
+        },
+        {
+          "platformRequirement": "1.0",
+          "artifactVersions": [
+            "1.0.999"
           ]
         }
       ],
       "commercial": false,
-      "weight": 970
+      "commercial-21": false,
+      "weight": 400
     },
     {
       "id": "pivot-table",
       "name": "Pivot Table",
       "about": "Enables turning a data set into a summary table and manipulating it using 2D drag-and-drop UI.",
-      "description": "## Overview\n\nThe add-on provides a PivotTable UI component based on [PivotTable.js](https://github.com/nicolaskruchten/pivottable) library. The table component enables turning a data set into a summary table and manipulating it using 2D drag-and-drop UI.\n\n ",
+      "description": "## Overview\n\nThe add-on provides a PivotTable UI component based on <a href=\"https://github.com/nicolaskruchten/pivottable\" target=\"_blank\">PivotTable.js</a> library. The table component enables turning a data set into a summary table and manipulating it using 2D drag-and-drop UI.\n\n ",
       "category": "Add-on",
       "tags": [
         "UI"
       ],
       "vendor": "Haulmont",
-      "updateDateTime": 1675072325000,
+      "updateDateTime": 1703073853000,
       "dependencies": [
         {
           "group": "io.jmix.ui",
@@ -198,31 +241,19 @@
         {
           "platformRequirement": "0.9",
           "artifactVersions": [
-            "0.9.999"
+            "0.9.1"
           ]
         },
         {
-          "platformRequirement": "1.0",
+          "platformRequirement": "1.5",
           "artifactVersions": [
-            "1.0.999"
+            "1.5.5"
           ]
         },
         {
-          "platformRequirement": "1.1",
+          "platformRequirement": "1.6",
           "artifactVersions": [
-            "1.1.999"
-          ]
-        },
-        {
-          "platformRequirement": "1.2",
-          "artifactVersions": [
-            "1.2.999"
-          ]
-        },
-        {
-          "platformRequirement": "1.3",
-          "artifactVersions": [
-            "1.3.999"
+            "1.6.999"
           ]
         },
         {
@@ -232,14 +263,39 @@
           ]
         },
         {
-          "platformRequirement": "1.5",
+          "platformRequirement": "1.3",
           "artifactVersions": [
-            "1.5.999"
+            "1.3.999"
+          ]
+        },
+        {
+          "platformRequirement": "1.2",
+          "artifactVersions": [
+            "1.2.999"
+          ]
+        },
+        {
+          "platformRequirement": "1.1",
+          "artifactVersions": [
+            "1.1.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.0",
+          "artifactVersions": [
+            "2.0.999"
+          ]
+        },
+        {
+          "platformRequirement": "1.0",
+          "artifactVersions": [
+            "1.0.999"
           ]
         }
       ],
       "commercial": false,
-      "weight": 760
+      "commercial-21": false,
+      "weight": 240
     },
     {
       "id": "imap",
@@ -251,7 +307,7 @@
         "Integration"
       ],
       "vendor": "Haulmont",
-      "updateDateTime": 1675072320000,
+      "updateDateTime": 1703073849000,
       "dependencies": [
         {
           "group": "io.jmix.imap",
@@ -312,23 +368,36 @@
           "artifactVersions": [
             "1.5.999"
           ]
+        },
+        {
+          "platformRequirement": "1.6",
+          "artifactVersions": [
+            "1.6.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.0",
+          "artifactVersions": [
+            "2.0.999"
+          ]
         }
       ],
       "commercial": false,
-      "weight": 900
+      "commercial-21": false,
+      "weight": 110
     },
     {
       "id": "aws-file-storage",
       "name": "AWS File Storage",
       "about": "A FileStorage implementation that stores data in Amazon S3.",
-      "description": "## Overview \nThe add-on provides a FileStorage implementation that stores data backed by file references in [Amazon S3](https://aws.amazon.com/s3/) storage.\n\n\n ",
+      "description": "## Overview \nThe add-on provides a FileStorage implementation that stores data backed by file references in <a href=\"https://aws.amazon.com/s3/\" target=\"_blank\">Amazon S3</a> storage.\n\n\n ",
       "category": "Add-on",
       "tags": [
         "Integration",
         "System"
       ],
       "vendor": "Haulmont",
-      "updateDateTime": 1675072292000,
+      "updateDateTime": 1719389101000,
       "dependencies": [
         {
           "group": "io.jmix.awsfs",
@@ -384,122 +453,196 @@
           "artifactVersions": [
             "1.5.999"
           ]
+        },
+        {
+          "platformRequirement": "1.6",
+          "artifactVersions": [
+            "1.6.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.0",
+          "artifactVersions": [
+            "2.0.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.1",
+          "artifactVersions": [
+            "2.1.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.2",
+          "artifactVersions": [
+            "2.2.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.3",
+          "artifactVersions": [
+            "2.3.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.4",
+          "artifactVersions": [
+            "2.4.999"
+          ]
+        },
+        {
+          "platformRequirement": "3.0",
+          "artifactVersions": [
+            "3.0.999"
+          ]
         }
       ],
       "commercial": false,
-      "weight": 665
+      "commercial-21": false,
+      "weight": 120
     },
     {
-            "id": "email-sending",
-            "name": "Email",
-            "about": "Provides email sending functionality.",
-            "description": "## Overview\nThe addon provides email sending facilities.\n\n## Features\n- Synchronous or asynchronous sending. In case of synchronous sending, the calling code waits till the message is sent to the SMTP server. In case of asynchronous sending, the message is persisted to the database and the control is returned immediately to the calling code. The actual sending is done later by a scheduled task.\n- Reliable tracking of message sending timestamp or errors in the database for both synchronous and asynchronous modes.\n- User interface to search and view information about sent messages, including all message attributes and content, sending status and the number of attempts.\n\n ",
-            "category": "Add-on",
-            "tags": [
-                "Features"
-            ],
-            "vendor": "Haulmont",
-            "updateDateTime": 1684143497000,
-            "dependencies": [
-                {
-                    "group": "io.jmix.email",
-                    "name": "jmix-email-starter",
-                    "main": true
-                },
-                {
-                    "group": "io.jmix.email",
-                    "name": "jmix-email-ui-starter",
-                    "main": true
-                },
-                {
-                    "group": "io.jmix.email",
-                    "name": "jmix-email-flowui-starter",
-                    "versionRange": "(1.99.999-SNAPSHOT,)",
-                    "main": true
-                }
-            ],
-            "compatibilityList": [
-                {
-                    "platformRequirement": "0.2",
-                    "artifactVersions": [
-                        "0.2.0"
-                    ]
-                },
-                {
-                    "platformRequirement": "0.3",
-                    "artifactVersions": [
-                        "0.3.2"
-                    ]
-                },
-                {
-                    "platformRequirement": "0.9",
-                    "artifactVersions": [
-                        "0.9.999"
-                    ]
-                },
-                {
-                    "platformRequirement": "1.0",
-                    "artifactVersions": [
-                        "1.0.999"
-                    ]
-                },
-                {
-                    "platformRequirement": "1.1",
-                    "artifactVersions": [
-                        "1.1.999"
-                    ]
-                },
-                {
-                    "platformRequirement": "1.2",
-                    "artifactVersions": [
-                        "1.2.999"
-                    ]
-                },
-                {
-                    "platformRequirement": "1.3",
-                    "artifactVersions": [
-                        "1.3.999"
-                    ]
-                },
-                {
-                    "platformRequirement": "1.4",
-                    "artifactVersions": [
-                        "1.4.999"
-                    ]
-                },
-                {
-                    "platformRequirement": "1.5",
-                    "artifactVersions": [
-                        "1.5.999"
-                    ]
-                },
-                {
-                    "platformRequirement": "1.6",
-                    "artifactVersions": [
-                        "1.6.999"
-                    ]
-                },
-                {
-                    "platformRequirement": "2.0",
-                    "artifactVersions": [
-                        "2.0.999"
-                    ]
-                }
-            ],
-            "commercial": false,
-            "weight": 990
-        },
-    {
-      "id": "audit",
-      "name": "Audit",
-      "about": "Provides the Entity Log mechanism for tracking changes in your JPA entities.",
-      "description": "## Overview\n\nThe add-on provides the Entity Log mechanism for tracking changes in your JPA entities.\n\nIt records changes in entity attributes and provides a user interface for searching and displaying information about the changes:\n\n- What entity instance was changed.\n- Old and new values of changed attributes.\n- When it was changed.\n- Which user changed the entity.\n\n\n\n ",
+      "id": "email-sending",
+      "name": "Email",
+      "about": "Provides email sending functionality.",
+      "description": "## Overview\n\nUse Jmix's integrated email sending add-on to automate outbound email tasks, keep track of all your sent emails with delivery outcomes.\n\n## Use Cases\n\n- Efficient Email Management: centralize control of outbound emails, newsletters, and urgent notifications.\n- Email Scheduling: automate direct mail activities by queuing messages for future sending through integration with the Quartz scheduler.\n\n## Key Features\n\n- Unified Email Tracking Interface: track and search all outbound emails from a single, user-friendly platform.\n- Comprehensive Email Details: access information like message attributes, sending status, timestamps, number of attempts, and delivery failures, all organized for easy review.\n- Advanced Sending Options: choose between asynchronous sending for routine communications and synchronous sending for critical alerts. \n\nSimplify your outbound email sending by Installing the add-on today.\n\n ",
       "category": "Add-on",
       "tags": [
         "Features"
       ],
       "vendor": "Haulmont",
-      "updateDateTime": 1675072289000,
+      "updateDateTime": 1719389108000,
+      "dependencies": [
+        {
+          "group": "io.jmix.email",
+          "name": "jmix-email-starter",
+          "main": true
+        },
+        {
+          "group": "io.jmix.email",
+          "name": "jmix-email-ui-starter",
+          "main": true
+        },
+        {
+          "group": "io.jmix.email",
+          "name": "jmix-email-flowui-starter",
+          "versionRange": "(1.99.999-SNAPSHOT,)",
+          "main": true
+        }
+      ],
+      "compatibilityList": [
+        {
+          "platformRequirement": "0.2",
+          "artifactVersions": [
+            "0.2.0"
+          ]
+        },
+        {
+          "platformRequirement": "0.3",
+          "artifactVersions": [
+            "0.3.2"
+          ]
+        },
+        {
+          "platformRequirement": "0.9",
+          "artifactVersions": [
+            "0.9.999"
+          ]
+        },
+        {
+          "platformRequirement": "1.0",
+          "artifactVersions": [
+            "1.0.999"
+          ]
+        },
+        {
+          "platformRequirement": "1.1",
+          "artifactVersions": [
+            "1.1.999"
+          ]
+        },
+        {
+          "platformRequirement": "1.2",
+          "artifactVersions": [
+            "1.2.999"
+          ]
+        },
+        {
+          "platformRequirement": "1.3",
+          "artifactVersions": [
+            "1.3.999"
+          ]
+        },
+        {
+          "platformRequirement": "1.4",
+          "artifactVersions": [
+            "1.4.999"
+          ]
+        },
+        {
+          "platformRequirement": "1.5",
+          "artifactVersions": [
+            "1.5.999"
+          ]
+        },
+        {
+          "platformRequirement": "1.6",
+          "artifactVersions": [
+            "1.6.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.0",
+          "artifactVersions": [
+            "2.0.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.1",
+          "artifactVersions": [
+            "2.1.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.2",
+          "artifactVersions": [
+            "2.2.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.3",
+          "artifactVersions": [
+            "2.3.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.4",
+          "artifactVersions": [
+            "2.4.999"
+          ]
+        },
+        {
+          "platformRequirement": "3.0",
+          "artifactVersions": [
+            "3.0.999"
+          ]
+        }
+      ],
+      "commercial": false,
+      "commercial-21": true,
+      "weight": 800
+    },
+    {
+      "id": "audit",
+      "name": "Audit",
+      "about": "Provides the Entity Log mechanism for tracking changes in your JPA entities.",
+      "description": "## Overview\n\nJmix Audit add-on offers a ready-to-use solution to track, view and search for what was modified, when it happened, and who's responsible for each change.\n\n## Use Cases\n\n- Maintain accountability: identify specific users behind each data modification operation to easily assign responsibility and resolve issues within your team.\n- Support compliance efforts: Track changes with timestamps to help adhere to standards like GDPR, HIPAA or other industry requirements.\n\n## Key Features\n\n- Detailed Change Logs: track what was modified, when it happened, and who's responsible in each business-sensitive entity.\n- Runtime Configuration: select entities and attributes you want to audit through an administrative UI at application runtime.\n- Searchable changelog: find specific changes with a searchable log, allowing you to filter by entity, change type, date, or user.\n\nPlug the addon even to existing projects for simple auditing without changing a single line of code!\n\n\n\n ",
+      "category": "Add-on",
+      "tags": [
+        "Features"
+      ],
+      "vendor": "Haulmont",
+      "updateDateTime": 1719389100000,
       "dependencies": [
         {
           "group": "io.jmix.audit",
@@ -572,9 +715,52 @@
           "artifactVersions": [
             "1.5.999"
           ]
+        },
+        {
+          "platformRequirement": "1.6",
+          "artifactVersions": [
+            "1.6.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.0",
+          "artifactVersions": [
+            "2.0.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.1",
+          "artifactVersions": [
+            "2.1.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.2",
+          "artifactVersions": [
+            "2.2.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.3",
+          "artifactVersions": [
+            "2.3.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.4",
+          "artifactVersions": [
+            "2.4.999"
+          ]
+        },
+        {
+          "platformRequirement": "3.0",
+          "artifactVersions": [
+            "3.0.999"
+          ]
         }
       ],
       "commercial": false,
+      "commercial-21": false,
       "weight": 950
     },
     {
@@ -587,7 +773,7 @@
         "Features"
       ],
       "vendor": "Haulmont",
-      "updateDateTime": 1675072306000,
+      "updateDateTime": 1719389106000,
       "dependencies": [
         {
           "group": "io.jmix.datatools",
@@ -660,22 +846,65 @@
           "artifactVersions": [
             "1.5.999"
           ]
+        },
+        {
+          "platformRequirement": "1.6",
+          "artifactVersions": [
+            "1.6.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.0",
+          "artifactVersions": [
+            "2.0.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.1",
+          "artifactVersions": [
+            "2.1.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.2",
+          "artifactVersions": [
+            "2.2.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.3",
+          "artifactVersions": [
+            "2.3.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.4",
+          "artifactVersions": [
+            "2.4.999"
+          ]
+        },
+        {
+          "platformRequirement": "3.0",
+          "artifactVersions": [
+            "3.0.999"
+          ]
         }
       ],
       "commercial": false,
+      "commercial-21": false,
       "weight": 980
     },
     {
       "id": "dynamic-attributes",
       "name": "Dynamic Attributes",
       "about": "Additional entity attributes that extend the data model on the fly.",
-      "description": "## Overview\nDynamic attributes are additional entity attributes that extend the data model without changing the database schema and restarting the application. It allows you to define new entity properties at the deployment or production stage.\n\nDynamic attributes are stored in the [main data store](https://docs.jmix.io/jmix/latest/data-model/data-stores.html#main) in an Entity-Attribute-Value structure. The framework automatically loads and saves values of dynamic attributes together with entity instances.\n\nUsers can view and edit dynamic attributes in tables and forms of existing application screens in [Jmix UI](https://docs.jmix.io/jmix/latest/backoffice-ui/index.html).\n\nJmix provides UI to configure dynamic attributes. An administrator can define a name, a type, validation rules, and specify what UI screens and visual components will display a dynamic attribute.\n\n ",
+      "description": "## Overview \n\nEnable end users to customize the data model on-the-fly with the Jmix Dynamic Attributes add-on, offering flexible modifications without database schema changes or application restarts.\n\n## Use Cases\n\n- On-the-Fly Data Model Adaptation: Equip your system administrators with the ability to add and configure custom attributes that reflect their data requirements.\n\n## Key Features\n\n- Flexible Data Model Extension: seamlessly add new attributes to your data model without altering the database structure or needing application restarts.\n- Low-code configuration: Access a full-featured user interface to define and customize new attributes for any specific entity, including setting names, data types, and applying validation rules.\n\nInstall the add-on for a more customizable solution.\n\n ",
       "category": "Add-on",
       "tags": [
         "Features"
       ],
       "vendor": "Haulmont",
-      "updateDateTime": 1675072308000,
+      "updateDateTime": 1719389107000,
       "dependencies": [
         {
           "group": "io.jmix.dynattr",
@@ -685,6 +914,12 @@
         {
           "group": "io.jmix.dynattr",
           "name": "jmix-dynattr-ui-starter",
+          "main": true
+        },
+        {
+          "group": "io.jmix.dynattr",
+          "name": "jmix-dynattr-flowui-starter",
+          "versionRange": "(2.0.999-SNAPSHOT,)",
           "main": true
         }
       ],
@@ -742,121 +977,197 @@
           "artifactVersions": [
             "1.5.999"
           ]
+        },
+        {
+          "platformRequirement": "1.6",
+          "artifactVersions": [
+            "1.6.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.0",
+          "artifactVersions": [
+            "2.0.0-RC1"
+          ]
+        },
+        {
+          "platformRequirement": "2.1",
+          "artifactVersions": [
+            "2.1.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.2",
+          "artifactVersions": [
+            "2.2.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.3",
+          "artifactVersions": [
+            "2.3.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.4",
+          "artifactVersions": [
+            "2.4.999"
+          ]
+        },
+        {
+          "platformRequirement": "3.0",
+          "artifactVersions": [
+            "3.0.999"
+          ]
         }
       ],
       "commercial": false,
-      "weight": 960
+      "commercial-21": false,
+      "weight": 310
     },
     {
-            "id": "rest-api",
-            "name": "REST API",
-            "about": "A generic REST API that allows you to work with entities and services.",
-            "description": "## Overview\nJmix provides a generic REST API that allows you to work with data model entities and business services without writing REST controllers on the backend. It automatically exposes endpoints for the following functionality:\n\n- CRUD operations on entities.\n- Calling of registered service methods.\n- Execution of predefined JPQL queries.\n- Uploading and downloading files.\n- Returning information about the data model.\n- Returning information about the current user and their permissions.\n\nREST API uses the OAuth2 protocol for authentication and supports anonymous access. All REST API endpoints respect data access constraints imposed by <a href=\"https://docs.jmix.io/jmix/latest/security/index.html\" target=\"_blank\">security</a>.\n\n\n\n\n ",
-            "category": "Add-on",
-            "tags": [
-                "Integration"
-            ],
-            "vendor": "Haulmont",
-            "updateDateTime": 1684143519000,
-            "dependencies": [
-                {
-                    "group": "io.jmix.rest",
-                    "name": "jmix-rest-starter",
-                    "main": true
-                },
-                {
-                    "group": "io.jmix.security",
-                    "name": "jmix-security-oauth2-starter",
-                    "versionRange": "(,1.99.999-SNAPSHOT]"
-                },
-                {
-                    "group": "io.jmix.authserver",
-                    "name": "jmix-authserver-starter",
-                    "versionRange": "(1.99.999-SNAPSHOT,)"
-                }
-            ],
-            "compatibilityList": [
-                {
-                    "platformRequirement": "0.9",
-                    "artifactVersions": [
-                        "0.9.999"
-                    ]
-                },
-                {
-                    "platformRequirement": "1.6",
-                    "artifactVersions": [
-                        "1.6.999"
-                    ]
-                },
-                {
-                    "platformRequirement": "1.5",
-                    "artifactVersions": [
-                        "1.5.999"
-                    ]
-                },
-                {
-                    "platformRequirement": "1.4",
-                    "artifactVersions": [
-                        "1.4.999"
-                    ]
-                },
-                {
-                    "platformRequirement": "1.3",
-                    "artifactVersions": [
-                        "1.3.999"
-                    ]
-                },
-                {
-                    "platformRequirement": "1.2",
-                    "artifactVersions": [
-                        "1.2.999"
-                    ]
-                },
-                {
-                    "platformRequirement": "1.1",
-                    "artifactVersions": [
-                        "1.1.999"
-                    ]
-                },
-                {
-                    "platformRequirement": "2.0",
-                    "artifactVersions": [
-                        "2.0.999"
-                    ]
-                },
-                {
-                    "platformRequirement": "1.0",
-                    "artifactVersions": [
-                        "1.0.999"
-                    ]
-                },
-                {
-                    "platformRequirement": "0.2",
-                    "artifactVersions": [
-                        "0.2.0"
-                    ]
-                },
-                {
-                    "platformRequirement": "0.3",
-                    "artifactVersions": [
-                        "0.3.2"
-                    ]
-                }
-            ],
-            "commercial": false,
-            "weight": 1000
+      "id": "rest-api",
+      "name": "REST API",
+      "about": "A generic REST API that allows you to work with entities and services.",
+      "description": "## Overview\nJmix provides a generic REST API that allows you to work with data model entities and business services without writing REST controllers on the backend. It automatically exposes endpoints for the following functionality:\n\n- CRUD operations on entities.\n- Calling of registered service methods.\n- Execution of predefined JPQL queries.\n- Uploading and downloading files.\n- Returning information about the data model.\n- Returning information about the current user and their permissions.\n\nREST API uses the OAuth2 protocol for authentication and supports anonymous access. All REST API endpoints respect data access constraints imposed by <a href=\"https://docs.jmix.io/jmix/latest/security/index.html\" target=\"_blank\">security</a>.\n\n\n\n\n ",
+      "category": "Add-on",
+      "tags": [
+        "Integration"
+      ],
+      "vendor": "Haulmont",
+      "updateDateTime": 1719389128000,
+      "dependencies": [
+        {
+          "group": "io.jmix.rest",
+          "name": "jmix-rest-starter",
+          "main": true
         },
+        {
+          "group": "io.jmix.security",
+          "name": "jmix-security-oauth2-starter",
+          "versionRange": "(,1.99.999-SNAPSHOT]",
+          "main": true
+        },
+        {
+          "group": "io.jmix.authserver",
+          "name": "jmix-authserver-starter",
+          "versionRange": "(1.99.999-SNAPSHOT,2.2.999-SNAPSHOT]",
+          "main": true
+        }
+      ],
+      "compatibilityList": [
+        {
+          "platformRequirement": "0.2",
+          "artifactVersions": [
+            "0.2.0"
+          ]
+        },
+        {
+          "platformRequirement": "0.3",
+          "artifactVersions": [
+            "0.3.2"
+          ]
+        },
+        {
+          "platformRequirement": "0.9",
+          "artifactVersions": [
+            "0.9.999"
+          ]
+        },
+        {
+          "platformRequirement": "1.0",
+          "artifactVersions": [
+            "1.0.999"
+          ]
+        },
+        {
+          "platformRequirement": "1.1",
+          "artifactVersions": [
+            "1.1.999"
+          ]
+        },
+        {
+          "platformRequirement": "1.2",
+          "artifactVersions": [
+            "1.2.999"
+          ]
+        },
+        {
+          "platformRequirement": "1.3",
+          "artifactVersions": [
+            "1.3.999"
+          ]
+        },
+        {
+          "platformRequirement": "1.4",
+          "artifactVersions": [
+            "1.4.999"
+          ]
+        },
+        {
+          "platformRequirement": "1.5",
+          "artifactVersions": [
+            "1.5.999"
+          ]
+        },
+        {
+          "platformRequirement": "1.6",
+          "artifactVersions": [
+            "1.6.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.0",
+          "artifactVersions": [
+            "2.0.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.1",
+          "artifactVersions": [
+            "2.1.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.2",
+          "artifactVersions": [
+            "2.2.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.3",
+          "artifactVersions": [
+            "2.3.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.4",
+          "artifactVersions": [
+            "2.4.999"
+          ]
+        },
+        {
+          "platformRequirement": "3.0",
+          "artifactVersions": [
+            "3.0.999"
+          ]
+        }
+      ],
+      "commercial": false,
+      "commercial-21": false,
+      "weight": 750
+    },
     {
       "id": "maps",
       "name": "Maps",
       "about": "Enriches your application with visual representation for spatial data.",
-      "description": "## Overview\n\nThe add-on helps you to enrich your application with visual representation and intuitive manipulation for spatial data. You can use a preferable map provider that meets your needs.\n\nThe component integrates spatial types (point, polyline, polygon) from [JTS Topology Suite (JTS)](https://locationtech.github.io/jts/) — the most popular Java library for working with spatial data.\n\nThe add-on supports a traditional multi-layer structure commonly used in professional GIS systems. The layers are represented as structural units of maps.\n\nYou can use the following types of layers:\n- Raster layers that consist of raster images. Can be provided by XYZ tiles services or Web Map Services.\n- Vector layers that contain geo-objects — entities with geometry attributes.\n\nThe add-on supports drawing and interactive editing of geo-entities and provides features for geoanalysis: heatmaps and clustering.\n\n Get a free trial of the add-on on a website. [link](https://www.jmix.io/marketplace/maps/)",
+      "description": "## Overview\n\nElevate your application with interactive maps and spatial data visualization. Choose your map provider and customize your map layers with ease.\n\n## Use Cases\n\n- Visualize custom content: use an image layer to display custom images to make complex or abstract data more intuitively understood.\n- Resource allocation and logistics: plan routes and optimize deliveries to improve resource allocation and logistics.\n- Dynamic data visualization: Display real-time data like weather patterns or traffic updates in various sectors, such as transportation or urban planning.\n- Contextual data visualization: Employ data binding in maps to provide context-specific information, aiding in sectors like real estate or environmental studies.\n\n## Key Features\n\n- Multiple layer options:\n<div style=\"margin-left:35px; margin-top: 15px;\">\no Image layer for adding specific images like floor plans or historical maps. Provides a static, fixed visual layer on your map.\n\no Tile layer for creating standard map views. Utilize tiled map services like XYZ or OpenStreetMap to display detailed, scalable maps.\n\no Vector layer for displaying dynamic data or bind data from the application. Attach data vectors to shapes, lines, or points for interactive map visualizations.\n</div>\n\n- Multi-layered visualization: combine various layers in a single map for a multi-dimensional view.\n\nTo get started with the mapping solution now, install the addon.\n\n Get a free trial of the add-on on a website. [link](https://www.jmix.io/marketplace/maps/)",
       "category": "Add-on",
       "tags": [
         "UI"
       ],
       "vendor": "Haulmont",
-      "updateDateTime": 1675072740000,
+      "updateDateTime": 1719389357000,
       "dependencies": [
         {
           "group": "io.jmix.maps",
@@ -878,6 +1189,12 @@
           "name": "jmix-maps-ui-widgets",
           "main": true,
           "configuration": "widgets"
+        },
+        {
+          "group": "io.jmix.maps",
+          "name": "jmix-maps-flowui-starter",
+          "versionRange": "(2.0.999-SNAPSHOT,)",
+          "main": true
         }
       ],
       "compatibilityList": [
@@ -928,22 +1245,65 @@
           "artifactVersions": [
             "1.5.999"
           ]
+        },
+        {
+          "platformRequirement": "1.6",
+          "artifactVersions": [
+            "1.6.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.0",
+          "artifactVersions": [
+            "2.0.0-RC1"
+          ]
+        },
+        {
+          "platformRequirement": "2.1",
+          "artifactVersions": [
+            "2.1.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.2",
+          "artifactVersions": [
+            "2.2.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.3",
+          "artifactVersions": [
+            "2.3.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.4",
+          "artifactVersions": [
+            "2.4.999"
+          ]
+        },
+        {
+          "platformRequirement": "3.0",
+          "artifactVersions": [
+            "3.0.999"
+          ]
         }
       ],
       "commercial": true,
-      "weight": 980
+      "commercial-21": false,
+      "weight": 600
     },
     {
       "id": "grid-export-actions",
       "name": "Grid Export Actions",
       "about": "The add-on provides actions that allow to export contents of table and grid components as a file in one of supported formats.",
-      "description": "## Overview\n\nThe add-on provides actions that allow user to export contents of table and grid components as a file in one of supported formats.\nExport formats: XLS, XLSX and JSON.\nSupported components: Table, GroupTable, TreeTable, DataGrid, TreeDataGrid, Tree.\n\n\n ",
+      "description": "## Overview \n\nThe Jmix Grid Export add-on equips your application with actions to export content from data grid components into multiple file formats.\n\n## Use Cases\n\n- Data analysis and reporting: users can export data from data grids for further analysis or reporting in formats like XLS, XLSX, or JSON.\n- Data backup: facilitate easy data backup from grid components, allowing users to save and archive essential information.\n- Data sharing: exported data can be shared across different applications and users, enhancing interoperability and data exchange.\n\n## Key Features\n\n- UI integration: Embed export functionality directly into the application UI in a few clicks, allowing users to export data during their workflow.\n- Multiple export formats: support for exporting data in XLS, XLSX, and JSON formats, catering to diverse external application compatibility.\n- Versatile component support: compatible with DataGrid and TreeDataGrid components for broad application utility.\n- Flexible export options include various export modes such as all rows, current page, or selected rows to control the scope of data exported.\n- Integrated export security: use built-in security integration to define who can perform exports, ensuring controlled access to data extraction functionalities.\n\nInstall the Grid Export add-on for a straightforward way to export, analyze, and share grid-based data.\n\n\n ",
       "category": "Add-on",
       "tags": [
         "Features"
       ],
       "vendor": "Haulmont",
-      "updateDateTime": 1675072338000,
+      "updateDateTime": 1719389121000,
       "dependencies": [
         {
           "group": "io.jmix.ui",
@@ -1018,10 +1378,53 @@
           "artifactVersions": [
             "1.5.999"
           ]
+        },
+        {
+          "platformRequirement": "1.6",
+          "artifactVersions": [
+            "1.6.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.0",
+          "artifactVersions": [
+            "2.0.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.1",
+          "artifactVersions": [
+            "2.1.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.2",
+          "artifactVersions": [
+            "2.2.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.3",
+          "artifactVersions": [
+            "2.3.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.4",
+          "artifactVersions": [
+            "2.4.999"
+          ]
+        },
+        {
+          "platformRequirement": "3.0",
+          "artifactVersions": [
+            "3.0.999"
+          ]
         }
       ],
       "commercial": false,
-      "weight": 1
+      "commercial-21": false,
+      "weight": 550
     },
     {
       "id": "search",
@@ -1034,7 +1437,7 @@
         "Features"
       ],
       "vendor": "Haulmont",
-      "updateDateTime": 1675072331000,
+      "updateDateTime": 1719389130000,
       "dependencies": [
         {
           "group": "io.jmix.search",
@@ -1044,6 +1447,18 @@
         {
           "group": "io.jmix.search",
           "name": "jmix-search-ui-starter",
+          "main": true
+        },
+        {
+          "group": "io.jmix.search",
+          "name": "jmix-search-flowui-starter",
+          "versionRange": "(2.0.999-SNAPSHOT,)",
+          "main": true
+        },
+        {
+          "group": "io.jmix.search",
+          "name": "jmix-search-opensearch-starter",
+          "versionRange": "(2.2.999-SNAPSHOT,)",
           "main": true
         }
       ],
@@ -1083,115 +1498,189 @@
           "artifactVersions": [
             "1.5.999"
           ]
+        },
+        {
+          "platformRequirement": "1.6",
+          "artifactVersions": [
+            "1.6.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.0",
+          "artifactVersions": [
+            "2.0.0-RC1"
+          ]
+        },
+        {
+          "platformRequirement": "2.1",
+          "artifactVersions": [
+            "2.1.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.2",
+          "artifactVersions": [
+            "2.2.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.3",
+          "artifactVersions": [
+            "2.3.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.4",
+          "artifactVersions": [
+            "2.4.999"
+          ]
+        },
+        {
+          "platformRequirement": "3.0",
+          "artifactVersions": [
+            "3.0.999"
+          ]
         }
       ],
       "commercial": false,
-      "weight": 1
+      "commercial-21": false,
+      "weight": 260
     },
     {
-            "id": "reports",
-            "name": "Reports",
-            "about": "Integrated report generator.",
-            "description": "## Overview\n\nThe add-on provides a complete solution for report generation in Jmix applications. It supports the following features:\n\n- Generating reports from templates created in office formats (DOCX, XLSX, ODT) or HTML.\n- Defining the report data sources at runtime using a step-by-step wizard or by manually coding SQL, JPQL or Groovy scripts.\n- Generating output documents in office formats or HTML, and converting them to PDF.\n- Creating complex XLSX reports: multi-tiered reports, reports with data aggregation, crosstab reports.\n- Using diagrams and formulas in XLSX reports.\n- Saving and viewing report execution history.\n- Report access rights.\n- REST API to execute reports.\n\n ",
-            "category": "Add-on",
-            "tags": [
-                "Features"
-            ],
-            "vendor": "Haulmont",
-            "updateDateTime": 1684143518000,
-            "dependencies": [
-                {
-                    "group": "io.jmix.reports",
-                    "name": "jmix-reports-starter",
-                    "main": true
-                },
-                {
-                    "group": "io.jmix.reports",
-                    "name": "jmix-reports-ui-starter",
-                    "main": true
-                },
-                {
-                    "group": "io.jmix.reports",
-                    "name": "jmix-reports-rest-starter",
-                    "main": true
-                },
-                {
-                    "group": "io.jmix.reports",
-                    "name": "jmix-reports-flowui-starter",
-                    "versionRange": "(1.99.999-SNAPSHOT,)",
-                    "main": true
-                }
-            ],
-            "compatibilityList": [
-                {
-                    "platformRequirement": "0.9",
-                    "artifactVersions": [
-                        "0.9.999"
-                    ]
-                },
-                {
-                    "platformRequirement": "1.0",
-                    "artifactVersions": [
-                        "1.0.999"
-                    ]
-                },
-                {
-                    "platformRequirement": "1.1",
-                    "artifactVersions": [
-                        "1.1.999"
-                    ]
-                },
-                {
-                    "platformRequirement": "1.2",
-                    "artifactVersions": [
-                        "1.2.999"
-                    ]
-                },
-                {
-                    "platformRequirement": "1.3",
-                    "artifactVersions": [
-                        "1.3.999"
-                    ]
-                },
-                {
-                    "platformRequirement": "1.4",
-                    "artifactVersions": [
-                        "1.4.999"
-                    ]
-                },
-                {
-                    "platformRequirement": "1.5",
-                    "artifactVersions": [
-                        "1.5.999"
-                    ]
-                },
-                {
-                    "platformRequirement": "1.6",
-                    "artifactVersions": [
-                        "1.6.999"
-                    ]
-                },
-                {
-                    "platformRequirement": "2.0",
-                    "artifactVersions": [
-                        "2.0.999"
-                    ]
-                }
-            ],
-            "commercial": false,
-            "weight": 1
+      "id": "reports",
+      "name": "Reports",
+      "about": "Integrated report generator.",
+      "description": "## Overview\n\nJmix Reports offers an embedded solution that enables end users to easily design and generate various reports, merging data from your application with user-friendly Office format templates, no specialized knowledge required.\n\n## Use Cases\n\n- Standard Document Generation: easily generate straightforward data presentations like invoices, POs, various forms straight from your application according to your business scenarios\n- Advanced Excel Analytics: use the full power of Excel to produce reports of anу complexity like complex analytical dashboards showcasing forecasts, performance metrics, and market trends\n- Data Export Solutions: Produce data export files like CSVs to exchange with external systems\n- User-Driven Reporting: Empower your users to create their own reports based on application data\n\n## Key Features\n\n- Familiar tools for creating templates: create your report's layout, data grouping, and crosstabs in XLSX, DOCX, ODT, HTML, CSV or any other text format as your templates \n \n- Access management: control access to specific reports from an administrative UI at runtime\n \n- Custom data sources: combine multiple data sources or connect custom data sources using a built-in wizard, SQL and other scripts or code\n \n- Multiple output formats: present your data in Office formats, PDF, HTML and others\n\n## Alternative Scenarios\n\n- Runtime designer: create reports with a step-by-step wizard at application runtime\n- Automated Execution: integrate pre-designed reports into automated processes\n- Reporting Service: set up a standalone service through a REST API to generate reports for external systems\n\nInstall the add-on for easy, integrated data visualization!\n\n ",
+      "category": "Add-on",
+      "tags": [
+        "Features"
+      ],
+      "vendor": "Haulmont",
+      "updateDateTime": 1719389127000,
+      "dependencies": [
+        {
+          "group": "io.jmix.reports",
+          "name": "jmix-reports-starter",
+          "main": true
         },
+        {
+          "group": "io.jmix.reports",
+          "name": "jmix-reports-ui-starter",
+          "main": true
+        },
+        {
+          "group": "io.jmix.reports",
+          "name": "jmix-reports-rest-starter",
+          "main": true
+        },
+        {
+          "group": "io.jmix.reports",
+          "name": "jmix-reports-flowui-starter",
+          "versionRange": "(1.99.999-SNAPSHOT,)",
+          "main": true
+        }
+      ],
+      "compatibilityList": [
+        {
+          "platformRequirement": "0.9",
+          "artifactVersions": [
+            "0.9.999"
+          ]
+        },
+        {
+          "platformRequirement": "1.0",
+          "artifactVersions": [
+            "1.0.999"
+          ]
+        },
+        {
+          "platformRequirement": "1.1",
+          "artifactVersions": [
+            "1.1.999"
+          ]
+        },
+        {
+          "platformRequirement": "1.2",
+          "artifactVersions": [
+            "1.2.999"
+          ]
+        },
+        {
+          "platformRequirement": "1.3",
+          "artifactVersions": [
+            "1.3.999"
+          ]
+        },
+        {
+          "platformRequirement": "1.4",
+          "artifactVersions": [
+            "1.4.999"
+          ]
+        },
+        {
+          "platformRequirement": "1.5",
+          "artifactVersions": [
+            "1.5.999"
+          ]
+        },
+        {
+          "platformRequirement": "1.6",
+          "artifactVersions": [
+            "1.6.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.0",
+          "artifactVersions": [
+            "2.0.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.1",
+          "artifactVersions": [
+            "2.1.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.2",
+          "artifactVersions": [
+            "2.2.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.3",
+          "artifactVersions": [
+            "2.3.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.4",
+          "artifactVersions": [
+            "2.4.999"
+          ]
+        },
+        {
+          "platformRequirement": "3.0",
+          "artifactVersions": [
+            "3.0.999"
+          ]
+        }
+      ],
+      "commercial": false,
+      "commercial-21": false,
+      "weight": 990
+    },
     {
       "id": "multitenancy",
       "name": "Multitenancy",
       "about": "Support for multitenant applications with a single database.",
-      "description": "## Overview\n\nThe add-on provides support for building multitenant applications with a single database.\n\nThe add-on supports two types of data:\n\n- common data - shared across tenants. Tenants have read-only access to this type of data;\n- tenant-specific data - not accessible to other tenants. Tenants have full access to this type of data.\n\nAll tenants have their own admin users which can create tenant users and assign tenant-specific roles.\n\n ",
+      "description": "## Overview\n\nUse Jmix's Multitenancy add-on to securely manage multiple clients within a single database. Separate common and tenant-specific data while maintaining administrative control at the tenant level.\n\n## Use Cases\n\n- Streamlined SaaS Deployment: create a multi-tenant SaaS application with a few simple annotations on tenant-specific entities.\n- Multi-Tenant System Architecture: allow each tenant to have a personalized application experience with tenant-specific settings, data views, and functionalities.\n\n## Key Features\n\n- Role-based access: empower tenant-specific admin users to create and manage additional tenant-specific users and roles at runtime.\n- Data segregation: keep common data readable for all tenants and tenant-specific data fully isolated.\n\nInstall the Multitenancy add-on for effective resource management.\n\n ",
       "category": "Add-on",
       "tags": [
         "System"
       ],
       "vendor": "Haulmont",
-      "updateDateTime": 1675072323000,
+      "updateDateTime": 1719389123000,
       "dependencies": [
         {
           "group": "io.jmix.multitenancy",
@@ -1246,23 +1735,66 @@
           "artifactVersions": [
             "1.5.999"
           ]
+        },
+        {
+          "platformRequirement": "1.6",
+          "artifactVersions": [
+            "1.6.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.0",
+          "artifactVersions": [
+            "2.0.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.1",
+          "artifactVersions": [
+            "2.1.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.2",
+          "artifactVersions": [
+            "2.2.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.3",
+          "artifactVersions": [
+            "2.3.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.4",
+          "artifactVersions": [
+            "2.4.999"
+          ]
+        },
+        {
+          "platformRequirement": "3.0",
+          "artifactVersions": [
+            "3.0.999"
+          ]
         }
       ],
       "commercial": false,
-      "weight": 1
+      "commercial-21": false,
+      "weight": 280
     },
     {
       "id": "ldap",
       "name": "LDAP",
       "about": "Enables LDAP authentication in Jmix applications.",
-      "description": "## Overview\n\nThe add-on provides an easy way to enable LDAP authentication in Jmix applications. It allows you to synchronize users and map LDAP groups and user attributes to Jmix security roles. The add-on also supports the case when users are managed only in LDAP and you don't have a user entity stored in the database.\n\nYou can use the add-on with Active Directory and with any other LDAP implementation.\n\nCAUTION: The add-on currently has experimental status and may introduce breaking changes in the next feature release.\n\n ",
+      "description": "## Overview\n\nIntegrate your Jmix Application with your existing LDAP system for a straightforward user management experience.\n\n## Use Cases\n\n- Centralized User Management: synchronize users and their roles between LDAP and your Jmix application with minimal configuration.\n- Consistent User Data Synchronization: control how user details are updated between LDAP and your Jmix application.\n\n## Key Features\n\n- Straightforward Configuration: easily set up server details and credentials for LDAP or Active Directory.\n- Role and Attribute Mapping: link LDAP group names and user attributes to Jmix roles and permissions.\n- In-Memory User Option: opt to store users solely in LDAP, avoiding duplicate data management efforts.\n- Trusted Security Framework: use pre-configured security setup based on Spring Security LDAP, with options for customization. \n\nCut down on LDAP setup time, install the add-on to get started!\n\n ",
       "category": "Add-on",
       "tags": [
         "Integration",
         "Security"
       ],
       "vendor": "Haulmont",
-      "updateDateTime": 1675072321000,
+      "updateDateTime": 1719389122000,
       "dependencies": [
         {
           "group": "io.jmix.ldap",
@@ -1306,10 +1838,53 @@
           "artifactVersions": [
             "1.5.999"
           ]
+        },
+        {
+          "platformRequirement": "1.6",
+          "artifactVersions": [
+            "1.6.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.0",
+          "artifactVersions": [
+            "2.0.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.1",
+          "artifactVersions": [
+            "2.1.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.2",
+          "artifactVersions": [
+            "2.2.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.3",
+          "artifactVersions": [
+            "2.3.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.4",
+          "artifactVersions": [
+            "2.4.999"
+          ]
+        },
+        {
+          "platformRequirement": "3.0",
+          "artifactVersions": [
+            "3.0.999"
+          ]
         }
       ],
       "commercial": false,
-      "weight": 1
+      "commercial-21": false,
+      "weight": 220
     },
     {
       "id": "wizard",
@@ -1321,7 +1896,7 @@
         "UI"
       ],
       "vendor": "Mario David",
-      "updateDateTime": 1639985661000,
+      "updateDateTime": 1674927589000,
       "dependencies": [
         {
           "group": "de.diedavids.jmix.wizard",
@@ -1335,23 +1910,30 @@
           "artifactVersions": [
             "1.0.0"
           ]
+        },
+        {
+          "platformRequirement": "1.4",
+          "artifactVersions": [
+            "1.4.1"
+          ]
         }
       ],
       "commercial": false,
-      "weight": 1
+      "commercial-21": false,
+      "weight": 30
     },
     {
       "id": "azure-file-storage",
       "name": "Azure File Storage",
       "about": "A FileStorage implementation that stores data in Azure Blob Storage.",
-      "description": "## Overview \n\nThe add-on provides a FileStorage implementation that stores data backed by file references in [Azure Blob Storage](https://azure.microsoft.com/en-us/services/storage/blobs/).\n\n ",
+      "description": "## Overview \n\nThe add-on provides a FileStorage implementation that stores data backed by file references in <a href=\"https://azure.microsoft.com/en-us/services/storage/blobs/\" target=\"_blank\">Azure Blob Storage</a>.\n\n ",
       "category": "Add-on",
       "tags": [
         "Integration",
         "System"
       ],
       "vendor": "Panos Bariamis",
-      "updateDateTime": 1656959923000,
+      "updateDateTime": 1708975131000,
       "dependencies": [
         {
           "group": "gr.netmechanics.jmix",
@@ -1360,6 +1942,12 @@
         }
       ],
       "compatibilityList": [
+        {
+          "platformRequirement": "1.0",
+          "artifactVersions": [
+            "1.0.0"
+          ]
+        },
         {
           "platformRequirement": "1.1",
           "artifactVersions": [
@@ -1383,22 +1971,41 @@
           "artifactVersions": [
             "1.4.0"
           ]
+        },
+        {
+          "platformRequirement": "1.5",
+          "artifactVersions": [
+            "1.5.0"
+          ]
+        },
+        {
+          "platformRequirement": "2.1",
+          "artifactVersions": [
+            "2.1.0"
+          ]
+        },
+        {
+          "platformRequirement": "2.2",
+          "artifactVersions": [
+            "2.2.0"
+          ]
         }
       ],
       "commercial": false,
-      "weight": 1
+      "commercial-21": false,
+      "weight": 10
     },
     {
       "id": "webdav",
       "name": "WebDAV",
       "about": "Enables collaborative work on documents located in the file storage using WebDAV protocol.",
-      "description": "## Overview\n\nJmix WebDAV add-on provides powerful functionality for collaborative work on documents of various formats.\n\nThe add-on enables the WebDAV protocol over the standard Jmix file storage API, which allows users to seamlessly open and edit files using their desktop applications (Word, Excel, LibreOffice, etc.) without the need to download and upload files to the web application.\n\n## Features\n\n- Operating with documents in applications that support WebDAV (such as Microsoft Office) straight from the server.  \n- Visual components to work with files and file versions in the application UI.\n- Full support for collaborative work and file versioning, manageable both from the client application and the application UI.\n- Configurable conflict resolution policies.\n- Simple management of file access control via full integration with Jmix security subsystem.\n- Access to files from external systems using static links.\n\nFiles are stored in the standard Jmix file storage, so there is no need for an external WebDAV server.\n \n\n Get a free trial of the add-on on a website. [link](https://www.jmix.io/marketplace/webdav/)",
+      "description": "## Overview\n\nJmix WebDAV add-on provides powerful functionality for collaborative work on documents of various formats.\n\nThe add-on enables the WebDAV protocol over the standard Jmix file storage API, which allows users to seamlessly open and edit files using their desktop applications (Word, Excel, LibreOffice, etc.) without the need to download and upload files to the web application.\n\n## Features\n\n- Operating with documents in applications that support WebDAV (such as Microsoft Office) straight from the server.  \n- Visual components to work with files and file versions in the application UI.\n- Full support for collaborative work and file versioning, manageable both from the client application and the application UI.\n- Configurable conflict resolution policies.\n- Simple management of file access control via full integration with Jmix security subsystem.\n- Access to files from external systems using static links.\n\nFiles are stored in the standard Jmix file storage, so there is no need for an external WebDAV server.\n\n## License\nWebDAV is included in the Enterprise plan. Please find more details on the [Pricing page](/subscription-plans-and-prices/).\n \n\n Get a free trial of the add-on on a website. [link](https://www.jmix.io/marketplace/webdav/)",
       "category": "Add-on",
       "tags": [
         "Features"
       ],
       "vendor": "Haulmont",
-      "updateDateTime": 1675072745000,
+      "updateDateTime": 1719389360000,
       "dependencies": [
         {
           "group": "io.jmix.webdav",
@@ -1414,6 +2021,12 @@
           "group": "io.jmix.webdav",
           "name": "jmix-webdav-rest-starter",
           "main": true
+        },
+        {
+          "group": "io.jmix.webdav",
+          "name": "jmix-webdav-flowui-starter",
+          "versionRange": "(2.0.999-SNAPSHOT,)",
+          "main": true
         }
       ],
       "compatibilityList": [
@@ -1446,10 +2059,53 @@
           "artifactVersions": [
             "1.5.999"
           ]
+        },
+        {
+          "platformRequirement": "1.6",
+          "artifactVersions": [
+            "1.6.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.0",
+          "artifactVersions": [
+            "2.0.0-RC1"
+          ]
+        },
+        {
+          "platformRequirement": "2.1",
+          "artifactVersions": [
+            "2.1.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.2",
+          "artifactVersions": [
+            "2.2.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.3",
+          "artifactVersions": [
+            "2.3.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.4",
+          "artifactVersions": [
+            "2.4.999"
+          ]
+        },
+        {
+          "platformRequirement": "3.0",
+          "artifactVersions": [
+            "3.0.999"
+          ]
         }
       ],
       "commercial": true,
-      "weight": 1
+      "commercial-21": false,
+      "weight": 400
     },
     {
       "id": "dashboards",
@@ -1461,7 +2117,7 @@
         "UI"
       ],
       "vendor": "Haulmont",
-      "updateDateTime": 1675072302000,
+      "updateDateTime": 1703073837000,
       "dependencies": [
         {
           "group": "io.jmix.dashboards",
@@ -1476,27 +2132,15 @@
       ],
       "compatibilityList": [
         {
-          "platformRequirement": "1.0",
+          "platformRequirement": "1.5",
           "artifactVersions": [
-            "1.0.999"
+            "1.5.5"
           ]
         },
         {
-          "platformRequirement": "1.1",
+          "platformRequirement": "1.6",
           "artifactVersions": [
-            "1.1.999"
-          ]
-        },
-        {
-          "platformRequirement": "1.2",
-          "artifactVersions": [
-            "1.2.999"
-          ]
-        },
-        {
-          "platformRequirement": "1.3",
-          "artifactVersions": [
-            "1.3.999"
+            "1.6.999"
           ]
         },
         {
@@ -1506,27 +2150,52 @@
           ]
         },
         {
-          "platformRequirement": "1.5",
+          "platformRequirement": "1.3",
           "artifactVersions": [
-            "1.5.999"
+            "1.3.999"
+          ]
+        },
+        {
+          "platformRequirement": "1.2",
+          "artifactVersions": [
+            "1.2.999"
+          ]
+        },
+        {
+          "platformRequirement": "1.1",
+          "artifactVersions": [
+            "1.1.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.0",
+          "artifactVersions": [
+            "2.0.999"
+          ]
+        },
+        {
+          "platformRequirement": "1.0",
+          "artifactVersions": [
+            "1.0.999"
           ]
         }
       ],
       "commercial": false,
-      "weight": 950
+      "commercial-21": false,
+      "weight": 300
     },
     {
       "id": "minio-file-storage",
       "name": "MinIO File Storage",
       "about": "A FileStorage implementation that stores data in MinIO object storage.",
-      "description": "## Overview \n\nThe add-on provides a FileStorage implementation that stores data backed by file references in [MinIO](https://min.io/).\n\n ",
+      "description": "## Overview \n\nThe add-on provides a FileStorage implementation that stores data backed by file references in <a href=\"https://min.io/\" target=\"_blank\">MinIO</a>.\n\n ",
       "category": "Add-on",
       "tags": [
         "Integration",
         "System"
       ],
       "vendor": "Community",
-      "updateDateTime": 1673688146000,
+      "updateDateTime": 1690895264000,
       "dependencies": [
         {
           "group": "dev.warhammster.jmix",
@@ -1558,101 +2227,44 @@
           "artifactVersions": [
             "1.4.0"
           ]
+        },
+        {
+          "platformRequirement": "1.5",
+          "artifactVersions": [
+            "1.5.0"
+          ]
         }
       ],
       "commercial": false,
-      "weight": 1
+      "commercial-21": false,
+      "weight": 20
     },
     {
-            "id": "business-calendars",
-            "name": "Business Calendars",
-            "about": "Provides API and UI for working with business days and hours.",
-            "description": "## Overview\n\nThe add-on allows you to manage business calendars containing holidays, scheduled and additional business days. Configured business calendars provide API to work with business days and hours.\n\nBusiness calendars can be defined at design time using annotated Java interfaces, or created at run time through the UI and stored in the database.\n\nThe business calendar API allows you to check if a date and time moment is a working hour, and provides date/time arithmetics considering business hours.\n\n## License\nBusiness Calendars is included in the Enterprise plan. Please find more details on the [Pricing page](/subscription-plans-and-prices/).\n\n Get a free trial of the add-on on a website. [link](https://www.jmix.io/marketplace/business-calendars/)",
-            "category": "Add-on",
-            "tags": [
-                "Features"
-            ],
-            "vendor": "Haulmont",
-            "updateDateTime": 1684143802000,
-            "dependencies": [
-                {
-                    "group": "io.jmix.businesscalendar",
-                    "name": "jmix-businesscalendar-starter",
-                    "main": true
-                },
-                {
-                    "group": "io.jmix.businesscalendar",
-                    "name": "jmix-businesscalendar-ui-starter",
-                    "main": true
-                },
-                {
-                    "group": "io.jmix.businesscalendar",
-                    "name": "jmix-businesscalendar-flowui-starter",
-                    "versionRange": "(1.99.999-SNAPSHOT,)",
-                    "main": true
-                }
-            ],
-            "compatibilityList": [
-                {
-                    "platformRequirement": "1.2",
-                    "artifactVersions": [
-                        "1.2.999"
-                    ]
-                },
-                {
-                    "platformRequirement": "1.3",
-                    "artifactVersions": [
-                        "1.3.999"
-                    ]
-                },
-                {
-                    "platformRequirement": "1.4",
-                    "artifactVersions": [
-                        "1.4.999"
-                    ]
-                },
-                {
-                    "platformRequirement": "1.5",
-                    "artifactVersions": [
-                        "1.5.999"
-                    ]
-                },
-                {
-                    "platformRequirement": "1.6",
-                    "artifactVersions": [
-                        "1.6.999"
-                    ]
-                },
-                {
-                    "platformRequirement": "2.0",
-                    "artifactVersions": [
-                        "2.0.999"
-                    ]
-                }
-            ],
-            "commercial": true,
-            "weight": 1
-        },
-    {
-      "id": "notifications",
-      "name": "Notifications",
-      "about": "Enables sending notification to users via various message channels.",
-      "description": "## Overview\n\nThe add-on allows you to create and send notifications via various message channels. Users can receive informational messages, notifications about system events, as well as notifications from business processes.\n\nBy default, the add-on provides two channels: in-app (for UI notifications) and email. Other channels can be added on the project level.\n\nIn-app notifications are shown by the special UI component which can be added to the main screen of the application.\n\nNotifications can be created and sent using a UI screen provided by the add-on, or through the API. There is also an integration with the BPM add-on which enables sending notifications from business processes.\n\n Get a free trial of the add-on on a website. [link](https://www.jmix.io/marketplace/notifications/)",
+      "id": "business-calendars",
+      "name": "Business Calendars",
+      "about": "Provides API and UI for working with business days and hours.",
+      "description": "## Overview \nJmix Business Calendar add-on is designed for managing business calendars, including holidays, scheduled, and additional business days and hours.\n\n## Use Cases\n\n- Inclusive business planning: tailor your scheduling by integrating business-specific calendars, adapting for holidays and special business days to enhance planning efficiency.\n- Automate time management: use the business calendar API for date and time calculations adhering to actual business hours.\n\n## Key Features\n\n- Flexible calendar implementation: create and manage calendars at application runtime via the UI or at design time through annotated Java interfaces.\n- Working hours validation: check if specific dates and times fall within designated working hours using the business calendar API.\n\nInstall the add-on to easily bring precision and flexibility to your business scheduling processes.\n\n Get a free trial of the add-on on a website. [link](https://www.jmix.io/marketplace/business-calendars/)",
       "category": "Add-on",
       "tags": [
         "Features"
       ],
       "vendor": "Haulmont",
-      "updateDateTime": 1675072743000,
+      "updateDateTime": 1719389355000,
       "dependencies": [
         {
-          "group": "io.jmix.notifications",
-          "name": "jmix-notifications-starter",
+          "group": "io.jmix.businesscalendar",
+          "name": "jmix-businesscalendar-starter",
           "main": true
         },
         {
-          "group": "io.jmix.notifications",
-          "name": "jmix-notifications-ui-starter",
+          "group": "io.jmix.businesscalendar",
+          "name": "jmix-businesscalendar-ui-starter",
+          "main": true
+        },
+        {
+          "group": "io.jmix.businesscalendar",
+          "name": "jmix-businesscalendar-flowui-starter",
+          "versionRange": "(1.99.999-SNAPSHOT,)",
           "main": true
         }
       ],
@@ -1680,23 +2292,167 @@
           "artifactVersions": [
             "1.5.999"
           ]
+        },
+        {
+          "platformRequirement": "1.6",
+          "artifactVersions": [
+            "1.6.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.0",
+          "artifactVersions": [
+            "2.0.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.1",
+          "artifactVersions": [
+            "2.1.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.2",
+          "artifactVersions": [
+            "2.2.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.3",
+          "artifactVersions": [
+            "2.3.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.4",
+          "artifactVersions": [
+            "2.4.999"
+          ]
+        },
+        {
+          "platformRequirement": "3.0",
+          "artifactVersions": [
+            "3.0.999"
+          ]
         }
       ],
       "commercial": true,
-      "weight": 1
+      "commercial-21": false,
+      "weight": 100
+    },
+    {
+      "id": "notifications",
+      "name": "Notifications",
+      "about": "Enables sending notification to users via various message channels.",
+      "description": "## Overview\n\nUse Jmix Notifications add-on to create and dispatch notifications through various channels. This add-on simplifies sending informational messages, system event alerts, and business process notifications to users.\n\n## Use Cases\n\n- User engagement and information: keep users informed about key updates, system events, and process developments within the application.\n- Automated notification workflow: integrate notifications with business processes, ensuring timely communication within workflows.\n- Effortless notification creation: accommodate to different user scenarios by executing notifications easily through a UI screen or programmatically with an API.\n\n## Key Features\n\n- In-app notification UI: add a special UI component to send In-app notifications right from the main screen of the application.\n- Multi-channel notification System: deliver notifications via in-app messages and/or emails, with the option to add custom channels tailored to your project's needs.\n- BPM add-on integration: integrate your notifications with the BPM add-on to send notifications from business processes.\n\nInstall the Notifications add-on for an out-of-the-box notification system!\n\n Get a free trial of the add-on on a website. [link](https://www.jmix.io/marketplace/notifications/)",
+      "category": "Add-on",
+      "tags": [
+        "Features"
+      ],
+      "vendor": "Haulmont",
+      "updateDateTime": 1719389358000,
+      "dependencies": [
+        {
+          "group": "io.jmix.notifications",
+          "name": "jmix-notifications-starter",
+          "main": true
+        },
+        {
+          "group": "io.jmix.notifications",
+          "name": "jmix-notifications-ui-starter",
+          "main": true
+        },
+        {
+          "group": "io.jmix.notifications",
+          "name": "jmix-notifications-flowui-starter",
+          "versionRange": "(2.0.999-SNAPSHOT,)",
+          "main": true
+        }
+      ],
+      "compatibilityList": [
+        {
+          "platformRequirement": "1.2",
+          "artifactVersions": [
+            "1.2.999"
+          ]
+        },
+        {
+          "platformRequirement": "1.3",
+          "artifactVersions": [
+            "1.3.999"
+          ]
+        },
+        {
+          "platformRequirement": "1.4",
+          "artifactVersions": [
+            "1.4.999"
+          ]
+        },
+        {
+          "platformRequirement": "1.5",
+          "artifactVersions": [
+            "1.5.999"
+          ]
+        },
+        {
+          "platformRequirement": "1.6",
+          "artifactVersions": [
+            "1.6.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.0",
+          "artifactVersions": [
+            "2.0.0-RC1"
+          ]
+        },
+        {
+          "platformRequirement": "2.1",
+          "artifactVersions": [
+            "2.1.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.2",
+          "artifactVersions": [
+            "2.2.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.3",
+          "artifactVersions": [
+            "2.3.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.4",
+          "artifactVersions": [
+            "2.4.999"
+          ]
+        },
+        {
+          "platformRequirement": "3.0",
+          "artifactVersions": [
+            "3.0.999"
+          ]
+        }
+      ],
+      "commercial": true,
+      "commercial-21": false,
+      "weight": 230
     },
     {
       "id": "quartz",
       "name": "Quartz",
       "about": "Enables managing Quartz jobs via user interface.",
-      "description": "## Overview\n\nThis add-on allows you to manage [Quartz](https://www.quartz-scheduler.org/) jobs via user interface: create and remove jobs, schedule triggers, pause and resume job execution.\n\nAt development time, you should create implementations of the org.quartz.Job interface that will be invoked to do the actual job. At run time, the add-on allows you to configure and run the jobs defined in your application.\n\n\n ",
+      "description": "## What is Quartz About?\n\nQuartz is an open-source job scheduling library, used to run tasks at specified intervals or times.\n\nIt's a go-to solution for automating repetitive tasks, running simple or complex schedules that may execute virtually any code you write.\n\nThe Quartz Scheduler includes many enterprise-class features, such as clustering, job persistence, and the ability to distribute job execution across multiple nodes. \n\n## What Does Jmix Add to Quartz?\n\nThe Jmix Quartz add-on adds a user-friendly interface for job management. You can create, configure, and manage jobs in a few clicks, all within your Jmix application during runtime without the need to redeploy your app, saving you time and effort.\n\n## How Can You Use It?\n\n- Quick setup: Implement the org.quartz.Job interface to define your jobs.\n- Runtime control: Use the built-in UI to configure and manage jobs, set triggers, and even pause or resume tasks as needed.\n\nInstall the add-on to automate complex tasks and reduce manual work.\n\n\n ",
       "category": "Add-on",
       "tags": [
         "Integration",
         "System"
       ],
       "vendor": "Haulmont",
-      "updateDateTime": 1675072326000,
+      "updateDateTime": 1719389126000,
       "dependencies": [
         {
           "group": "io.jmix.quartz",
@@ -1740,23 +2496,66 @@
           "artifactVersions": [
             "1.5.999"
           ]
+        },
+        {
+          "platformRequirement": "1.6",
+          "artifactVersions": [
+            "1.6.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.0",
+          "artifactVersions": [
+            "2.0.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.1",
+          "artifactVersions": [
+            "2.1.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.2",
+          "artifactVersions": [
+            "2.2.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.3",
+          "artifactVersions": [
+            "2.3.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.4",
+          "artifactVersions": [
+            "2.4.999"
+          ]
+        },
+        {
+          "platformRequirement": "3.0",
+          "artifactVersions": [
+            "3.0.999"
+          ]
         }
       ],
       "commercial": false,
-      "weight": 1
+      "commercial-21": false,
+      "weight": 760
     },
     {
       "id": "openid-connect",
       "name": "OpenID Connect",
       "about": "Integration with OIDC providers for external authentication and SSO.",
-      "description": "## Overview\n\nThe Jmix OpenID Connect add-on provides predefined Spring Security configurations and a set of services that allow you to easily implement the following functionality:\n\n- User authentication using an external OIDC provider (for example, Keycloak).\n- Mapping of user attributes and roles from an OIDC provider user to a Jmix user.\n- Persisting user entity and role assignments after the user is successfully authenticated at the OIDC provider.\n\n ",
+      "description": "## Overview\n\nImprove your application security with Jmix OpenID Connect using ready-to-use Spring Security configurations and OAuth 2.0 to simplify logins via trusted identity providers like Keycloak, Okta and others.\n\n## Use Cases\n\n- Streamlined authentication: implement Single Sign-On across multiple Jmix applications, providing a cohesive and secure user experience.\n- Unified Identity Management: centralize the management of user credentials and permissions using federated identity from OIDC providers.\n\n## Key Features\n\n- Preconfigured security: use predefined Spring Security configurations for quick and easy setup.\n- Attribute and role mapping: integrate OIDC provider attributes and roles into the Jmix user management system.\n- Consistent user data: ensure consistency of user data and roles upon successful authentication.\n\nEnhance your app's security by adding the OIDC add-on now.\n\n ",
       "category": "Add-on",
       "tags": [
         "Integration",
         "Security"
       ],
       "vendor": "Haulmont",
-      "updateDateTime": 1675072324000,
+      "updateDateTime": 1719389124000,
       "dependencies": [
         {
           "group": "io.jmix.oidc",
@@ -1788,10 +2587,53 @@
           "artifactVersions": [
             "1.5.999"
           ]
+        },
+        {
+          "platformRequirement": "1.6",
+          "artifactVersions": [
+            "1.6.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.0",
+          "artifactVersions": [
+            "2.0.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.1",
+          "artifactVersions": [
+            "2.1.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.2",
+          "artifactVersions": [
+            "2.2.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.3",
+          "artifactVersions": [
+            "2.3.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.4",
+          "artifactVersions": [
+            "2.4.999"
+          ]
+        },
+        {
+          "platformRequirement": "3.0",
+          "artifactVersions": [
+            "3.0.999"
+          ]
         }
       ],
       "commercial": false,
-      "weight": 1
+      "commercial-21": false,
+      "weight": 290
     },
     {
       "id": "email-templates",
@@ -1803,7 +2645,7 @@
         "UI"
       ],
       "vendor": "Haulmont",
-      "updateDateTime": 1675072312000,
+      "updateDateTime": 1703073843000,
       "dependencies": [
         {
           "group": "io.jmix.emailtemplates",
@@ -1818,33 +2660,21 @@
       ],
       "compatibilityList": [
         {
+          "platformRequirement": "1.5",
+          "artifactVersions": [
+            "1.5.5"
+          ]
+        },
+        {
           "platformRequirement": "0.9",
           "artifactVersions": [
             "0.9.999"
           ]
         },
         {
-          "platformRequirement": "1.0",
+          "platformRequirement": "1.6",
           "artifactVersions": [
-            "1.0.999"
-          ]
-        },
-        {
-          "platformRequirement": "1.1",
-          "artifactVersions": [
-            "1.1.999"
-          ]
-        },
-        {
-          "platformRequirement": "1.2",
-          "artifactVersions": [
-            "1.2.999"
-          ]
-        },
-        {
-          "platformRequirement": "1.3",
-          "artifactVersions": [
-            "1.3.999"
+            "1.6.999"
           ]
         },
         {
@@ -1854,26 +2684,51 @@
           ]
         },
         {
-          "platformRequirement": "1.5",
+          "platformRequirement": "1.3",
           "artifactVersions": [
-            "1.5.999"
+            "1.3.999"
+          ]
+        },
+        {
+          "platformRequirement": "1.2",
+          "artifactVersions": [
+            "1.2.999"
+          ]
+        },
+        {
+          "platformRequirement": "1.1",
+          "artifactVersions": [
+            "1.1.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.0",
+          "artifactVersions": [
+            "2.0.999"
+          ]
+        },
+        {
+          "platformRequirement": "1.0",
+          "artifactVersions": [
+            "1.0.999"
           ]
         }
       ],
       "commercial": false,
-      "weight": 1
+      "commercial-21": false,
+      "weight": 340
     },
     {
       "id": "application-settings",
       "name": "Application Settings",
       "about": "Provides a simple API and UI to work with mutable values of different types stored in database.",
-      "description": "## Overview\n\nThe Application Settings add-on provides a simple API and UI to work with mutable values of different types stored in the database. These values are usually used as parameters of different functionality of the application.\n\nSettings are defined by regular entities, the only requirement for them is to extend a specific base class. You can set default values of parameters using annotations on the settings entity class.\n\nThe API enables loading settings by the entity class and saving changed values. The add-on also provides a UI screen for managing settings at runtime.\n\n ",
+      "description": "## Overview\n\nThe Application Settings add-on provides a simple API and UI to manage persistent mutable values.\n\n## Use Cases\n\n- Effortless Settings Creation: define and manage key application settings such as notification texts or operational thresholds.\n- API-Driven Customization: utilize the API for automated settings adjustments.\n\n## Key Features\n\n- Simple Setup: create a settings-specific entity extending a base class.\n- Default Value Assignment: use annotations to set initial values for your settings entities.\n- User-Friendly Interface: provide end users with a clean and intuitive UI for managing settings.\n\nInstall the add-on for easy, real-time settings management.\n\n ",
       "category": "Add-on",
       "tags": [
         "Features"
       ],
       "vendor": "Haulmont",
-      "updateDateTime": 1675072281000,
+      "updateDateTime": 1719389099000,
       "dependencies": [
         {
           "group": "io.jmix.appsettings",
@@ -1916,22 +2771,65 @@
           "artifactVersions": [
             "1.5.999"
           ]
+        },
+        {
+          "platformRequirement": "1.6",
+          "artifactVersions": [
+            "1.6.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.0",
+          "artifactVersions": [
+            "2.0.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.1",
+          "artifactVersions": [
+            "2.1.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.2",
+          "artifactVersions": [
+            "2.2.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.3",
+          "artifactVersions": [
+            "2.3.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.4",
+          "artifactVersions": [
+            "2.4.999"
+          ]
+        },
+        {
+          "platformRequirement": "3.0",
+          "artifactVersions": [
+            "3.0.999"
+          ]
         }
       ],
       "commercial": false,
-      "weight": 1
+      "commercial-21": false,
+      "weight": 640
     },
     {
       "id": "greek-translation",
       "name": "Greek Translation",
       "about": "Greek translation of the framework.",
       "description": "## OVERVIEW\n\nThis add-on provides the Greek translation of the framework messages and the localized set of data formats.\n\n## USAGE\n\nAfter installation, add Greek (el) locale using the Locales tab of the Project Properties window in Studio.\n\n ",
-      "category": "Add-on",
+      "category": "Translation",
       "tags": [
         "Localization"
       ],
       "vendor": "Panos Bariamis",
-      "updateDateTime": 1675072280000,
+      "updateDateTime": 1719389097000,
       "dependencies": [
         {
           "group": "io.jmix.translations",
@@ -1963,10 +2861,53 @@
           "artifactVersions": [
             "1.5.999"
           ]
+        },
+        {
+          "platformRequirement": "1.6",
+          "artifactVersions": [
+            "1.6.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.0",
+          "artifactVersions": [
+            "2.0.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.1",
+          "artifactVersions": [
+            "2.1.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.2",
+          "artifactVersions": [
+            "2.2.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.3",
+          "artifactVersions": [
+            "2.3.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.4",
+          "artifactVersions": [
+            "2.4.999"
+          ]
+        },
+        {
+          "platformRequirement": "3.0",
+          "artifactVersions": [
+            "3.0.999"
+          ]
         }
       ],
       "commercial": false,
-      "weight": 1
+      "commercial-21": false,
+      "weight": 33
     },
     {
       "id": "duration-field",
@@ -1978,7 +2919,7 @@
         "UI"
       ],
       "vendor": "Panos Bariamis",
-      "updateDateTime": 1667635200000,
+      "updateDateTime": 1679764261000,
       "dependencies": [
         {
           "group": "gr.netmechanics.jmix",
@@ -1992,10 +2933,41 @@
           "artifactVersions": [
             "1.2.1"
           ]
+        },
+        {
+          "platformRequirement": "1.1",
+          "artifactVersions": [
+            "1.1.0"
+          ]
+        },
+        {
+          "platformRequirement": "1.2",
+          "artifactVersions": [
+            "1.2.0"
+          ]
+        },
+        {
+          "platformRequirement": "1.3",
+          "artifactVersions": [
+            "1.3.1"
+          ]
+        },
+        {
+          "platformRequirement": "1.4",
+          "artifactVersions": [
+            "1.4.0"
+          ]
+        },
+        {
+          "platformRequirement": "1.5",
+          "artifactVersions": [
+            "1.5.0"
+          ]
         }
       ],
       "commercial": false,
-      "weight": 1
+      "commercial-21": false,
+      "weight": 8
     },
     {
       "id": "image-cropper",
@@ -2007,23 +2979,42 @@
         "UI"
       ],
       "vendor": "JmixCn Team",
-      "updateDateTime": 1667116800000,
+      "updateDateTime": 1680329774000,
       "dependencies": [
         {
           "group": "io.jmix.gradle",
-          "name": "jmix-gradle-plugin",
-          "main": true
+          "name": "jmix-gradle-plugin"
         }
       ],
-      "compatibilityList": [],
+      "compatibilityList": [
+        {
+          "platformRequirement": "0.0",
+          "artifactVersions": [
+            "0.0.2"
+          ]
+        },
+        {
+          "platformRequirement": "0.1",
+          "artifactVersions": [
+            "0.1.1"
+          ]
+        },
+        {
+          "platformRequirement": "0.2",
+          "artifactVersions": [
+            "0.2.0"
+          ]
+        }
+      ],
       "commercial": false,
+      "commercial-21": false,
       "weight": 1
     },
     {
       "id": "figma-ui-kit",
       "name": "Figma UI Kit",
       "about": "This UI kit is aimed at designing web interfaces based on Jmix design system.",
-      "description": "## Overview\n\nThis UI kit is aimed at designing web interfaces based on Jmix design system.\n\nIt contains a library of components, templates and usage recommendations:\n\n- 25+ visual components.\n- 800+ icons.\n- Color scheme.\n- Font recommendations.\n\n## Who benefits from UI kit?\n\n- Designers – create interface of Jmix applications faster with the complete set of UI components. Add branding of your company, customize styles staying within the framework design system.\n- Business analysts – empower your prototypes to make them ready-to-use mock-ups of the future application.\n- Developers – create a prototype of application to save time on the development stage.\n\n## License\n\nAccess to Figma UI kit is **included in Jmix Enterprise** plan. You can get access to the kit staying on Free or RAD plan for **$190**. The payment is one-off and includes all the future updates of the kit. Please [contact us](/contacts/) to get an invoice. After the payment you will receive .fig file, which you can import to the project.\n\nIf you already use Enterprise plan, [contact us](/contacts/) from the email associated with the subscription. We will send you a .fig file right away.\n\nPlease note that the kit is created only for Figma.\n\n## Installation\n\n1. Open the list of design files in the Figma desktop application or web version.\n2. Drag and drop .fig file with Jmix UI kit. Alternatively use the Import file button.\n\n\n\n ",
+      "description": "## Overview\n\nThis UI kit is aimed at designing web interfaces based on Jmix design system.\n\nIt contains a library of components, templates and usage recommendations:\n\n- 25+ visual components.\n- 800+ icons.\n- Color scheme.\n- Font recommendations.\n\n## Who benefits from UI kit?\n\n- Designers – create interface of Jmix applications faster with the complete set of UI components. Add branding of your company, customize styles staying within the framework design system.\n- Business analysts – empower your prototypes to make them ready-to-use mock-ups of the future application.\n- Developers – create a prototype of application to save time on the development stage.\n\n## UI kit for Jmix 2.X\nIf you need a UI kit for Jmix 2.X, you can use the Vaadin Flow UI kit, which is available on [Figma marketplace](https://www.figma.com/community/file/843042473942860131/vaadin-design-system) for free. Please note that some components from the Vaadin kit are not available in Jmix (and vice versa). You can find the complete list of UI components in the [documentation](https://docs.jmix.io/jmix/flow-ui/vc/components.html).\n\n## License\n\nAccess to Figma UI kit is **included in Jmix Enterprise** plan. You can get access to the kit staying on Free or RAD plan for **$190**. The payment is one-off and includes all the future updates of the kit. Please [contact us](/contacts/) to get an invoice. After the payment you will receive .fig file, which you can import to the project.\n\nIf you already use Enterprise plan, [contact us](/contacts/) from the email associated with the subscription. We will send you a .fig file right away.\n\nPlease note that the kit is created only for Figma.\n\n## License\nFigma UI Kit is included in the Enterprise plan. Please find more details on the [Pricing page](/subscription-plans-and-prices/).\n\n## Installation\n\n1. Open the list of design files in the Figma desktop application or web version.\n2. Drag and drop .fig file with Jmix UI kit. Alternatively use the Import file button.\n\n\n\n ",
       "category": "Add-on",
       "tags": [
         "UI"
@@ -2033,19 +3024,20 @@
       "dependencies": [],
       "compatibilityList": [],
       "commercial": true,
-      "weight": 1
+      "commercial-21": false,
+      "weight": 200
     },
     {
       "id": "kurdish-translation",
       "name": "Kurdish Translation",
       "about": "Kurdish translation of the framework.",
       "description": "## Overview\n\nThis add-on provides the Kurdish (Sorani) translation of the framework messages and the localized set of data formats.\n\n## Usage\n\nAfter installation, add Kurdish (Sorani - ckb) locale using the Locales tab of the Project Properties window in Studio.\n\n Kurdish translation of the framework.",
-      "category": "Add-on",
+      "category": "Translation",
       "tags": [
         "Localization"
       ],
       "vendor": "Swara",
-      "updateDateTime": 1675072278000,
+      "updateDateTime": 1719389096000,
       "dependencies": [
         {
           "group": "io.jmix.translations",
@@ -2071,22 +3063,65 @@
           "artifactVersions": [
             "1.5.999"
           ]
+        },
+        {
+          "platformRequirement": "1.6",
+          "artifactVersions": [
+            "1.6.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.0",
+          "artifactVersions": [
+            "2.0.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.1",
+          "artifactVersions": [
+            "2.1.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.2",
+          "artifactVersions": [
+            "2.2.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.3",
+          "artifactVersions": [
+            "2.3.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.4",
+          "artifactVersions": [
+            "2.4.999"
+          ]
+        },
+        {
+          "platformRequirement": "3.0",
+          "artifactVersions": [
+            "3.0.999"
+          ]
         }
       ],
       "commercial": false,
-      "weight": 1
+      "commercial-21": false,
+      "weight": 35
     },
     {
       "id": "dutch-translation",
       "name": "Dutch Translation",
       "about": "Dutch translation of the framework.",
       "description": "## Overview\n\nThis add-on provides the Dutch translation of the framework messages and the localized set of data formats.\n\n## Usage\n\nAfter installation, add Dutch (nl) locale using the Locales tab of the Project Properties window in Studio.\n\n Dutch translation of the framework.",
-      "category": "Add-on",
+      "category": "Translation",
       "tags": [
         "Localization"
       ],
       "vendor": "EZ Software",
-      "updateDateTime": 1675072283000,
+      "updateDateTime": 1719389098000,
       "dependencies": [
         {
           "group": "io.jmix.translations",
@@ -2112,10 +3147,53 @@
           "artifactVersions": [
             "1.5.999"
           ]
+        },
+        {
+          "platformRequirement": "1.6",
+          "artifactVersions": [
+            "1.6.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.0",
+          "artifactVersions": [
+            "2.0.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.1",
+          "artifactVersions": [
+            "2.1.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.2",
+          "artifactVersions": [
+            "2.2.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.3",
+          "artifactVersions": [
+            "2.3.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.4",
+          "artifactVersions": [
+            "2.4.999"
+          ]
+        },
+        {
+          "platformRequirement": "3.0",
+          "artifactVersions": [
+            "3.0.999"
+          ]
         }
       ],
       "commercial": false,
-      "weight": 1
+      "commercial-21": false,
+      "weight": 38
     },
     {
       "id": "french-translation",
@@ -2126,8 +3204,8 @@
       "tags": [
         "Localization"
       ],
-      "vendor": "Benoît VALLETTE d'OSIA",
-      "updateDateTime": 1675072281000,
+      "vendor": "Benoît VALLETTE d'OSIA",
+      "updateDateTime": 1719389097000,
       "dependencies": [
         {
           "group": "io.jmix.translations",
@@ -2136,48 +3214,6 @@
         }
       ],
       "compatibilityList": [
-        {
-          "platformRequirement": "0.9",
-          "artifactVersions": [
-            "0.9.999"
-          ]
-        },
-        {
-          "platformRequirement": "1.5",
-          "artifactVersions": [
-            "1.5.999"
-          ]
-        },
-        {
-          "platformRequirement": "1.4",
-          "artifactVersions": [
-            "1.4.999"
-          ]
-        },
-        {
-          "platformRequirement": "1.3",
-          "artifactVersions": [
-            "1.3.999"
-          ]
-        },
-        {
-          "platformRequirement": "1.2",
-          "artifactVersions": [
-            "1.2.999"
-          ]
-        },
-        {
-          "platformRequirement": "1.1",
-          "artifactVersions": [
-            "1.1.999"
-          ]
-        },
-        {
-          "platformRequirement": "1.0",
-          "artifactVersions": [
-            "1.0.999"
-          ]
-        },
         {
           "platformRequirement": "0.2",
           "artifactVersions": [
@@ -2189,35 +3225,6 @@
           "artifactVersions": [
             "0.3.2"
           ]
-        }
-      ],
-      "commercial": false,
-      "weight": 1
-    },
-    {
-      "id": "grapesjs",
-      "name": "GrapesJS",
-      "about": "A visual HTML editor based on the GrapesJS library.",
-      "description": "## Overview\nThe add-on provides a visual HTML editor based on a [GrapesJS](https://grapesjs.com/) JavaScript library with the extensive set of HTML elements. It allows building HTML templates without any knowledge of coding.</p>\n\nAll you need is to drag an element into the canvas. The wide range of options enables independent styling of any element inside the canvas.\n\nTree of elements is always available to control the structure. Also, you can edit HTML code manually or upload code from the file.\n\n## Features\n\n* Wide variety of built-in HTML elements.\n* Viewing representation for different devices.\n* Using CSS properties.\n* Downloading/uploading HTML code.\n\n ",
-      "category": "Add-on",
-      "tags": [
-        "UI"
-      ],
-      "vendor": "Haulmont",
-      "updateDateTime": 1675072318000,
-      "dependencies": [
-        {
-          "group": "io.jmix.grapesjs",
-          "name": "jmix-grapesjs-starter",
-          "main": true
-        }
-      ],
-      "compatibilityList": [
-        {
-          "platformRequirement": "0.3",
-          "artifactVersions": [
-            "0.3.2"
-          ]
         },
         {
           "platformRequirement": "0.9",
@@ -2260,10 +3267,818 @@
           "artifactVersions": [
             "1.5.999"
           ]
+        },
+        {
+          "platformRequirement": "1.6",
+          "artifactVersions": [
+            "1.6.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.0",
+          "artifactVersions": [
+            "2.0.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.1",
+          "artifactVersions": [
+            "2.1.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.2",
+          "artifactVersions": [
+            "2.2.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.3",
+          "artifactVersions": [
+            "2.3.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.4",
+          "artifactVersions": [
+            "2.4.999"
+          ]
+        },
+        {
+          "platformRequirement": "3.0",
+          "artifactVersions": [
+            "3.0.999"
+          ]
         }
       ],
       "commercial": false,
-      "weight": 10
+      "commercial-21": false,
+      "weight": 83
+    },
+    {
+      "id": "menu-editor",
+      "name": "Menu Editor",
+      "about": "Enables multiple main menus configurable at runtime.",
+      "description": "## OVERVIEW\nThe add-on provides support for multiple main menus in Jmix applications. Menus are stored in the database and can be created and edited at runtime using the administration screens.\n\n### Main functions:\n\n- Enables changing menu structure and menu item properties (caption, shortcut, icon, etc.) using the administration screens at runtime.\n- Enables using multiple main menus with different structure for different user groups.\n\n Enables multiple main menus configurable at runtime.",
+      "category": "Add-on",
+      "tags": [
+        "UI",
+        "Features"
+      ],
+      "vendor": "Danila Valikov",
+      "updateDateTime": 1703172118000,
+      "dependencies": [
+        {
+          "group": "io.github.it-syn",
+          "name": "jmix-menu-editor-starter",
+          "main": true
+        },
+        {
+          "group": "io.github.it-syn",
+          "name": "jmix-menu-editor",
+          "main": true
+        }
+      ],
+      "compatibilityList": [
+        {
+          "platformRequirement": "0.8",
+          "artifactVersions": [
+            "0.8.6"
+          ]
+        },
+        {
+          "platformRequirement": "0.9",
+          "artifactVersions": [
+            "0.9.1"
+          ]
+        }
+      ],
+      "commercial": false,
+      "commercial-21": false,
+      "weight": 5
+    },
+    {
+      "id": "italian-translation",
+      "name": "Italian Translation",
+      "about": "Italian translation of the framework.",
+      "description": "## OVERVIEW\nThis add-on provides the Italian translation of the framework messages and the localized set of data formats.\n\n## USAGE\nAfter installation, add Italian (it) locale using the Locales tab of the Project Properties window in Studio.\n\n Italian translation of the framework.",
+      "category": "Translation",
+      "tags": [
+        "Localization"
+      ],
+      "vendor": "Tommaso Tuni",
+      "updateDateTime": 1719389097000,
+      "dependencies": [
+        {
+          "group": "io.jmix.translations",
+          "name": "jmix-translations-it",
+          "main": true
+        }
+      ],
+      "compatibilityList": [
+        {
+          "platformRequirement": "1.5",
+          "artifactVersions": [
+            "1.5.999"
+          ]
+        },
+        {
+          "platformRequirement": "1.6",
+          "artifactVersions": [
+            "1.6.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.0",
+          "artifactVersions": [
+            "2.0.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.1",
+          "artifactVersions": [
+            "2.1.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.2",
+          "artifactVersions": [
+            "2.2.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.3",
+          "artifactVersions": [
+            "2.3.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.4",
+          "artifactVersions": [
+            "2.4.999"
+          ]
+        },
+        {
+          "platformRequirement": "3.0",
+          "artifactVersions": [
+            "3.0.999"
+          ]
+        }
+      ],
+      "commercial": false,
+      "commercial-21": false,
+      "weight": 85
+    },
+    {
+      "id": "arabic-translation",
+      "name": "Arabic Translation",
+      "about": "Arabic translation of the framework.",
+      "description": "## OVERVIEW\nThis add-on provides the Arabic translation of the framework messages and the localized set of data formats.\n\n## USAGE\nAfter installation, add Arabic (ar) locale using the Locales tab of the Project Properties window in Studio.\n\n ",
+      "category": "Translation",
+      "tags": [
+        "Localization"
+      ],
+      "vendor": "Abdalrahman Mohammed",
+      "updateDateTime": 1719389096000,
+      "dependencies": [
+        {
+          "group": "io.jmix.translations",
+          "name": "jmix-translations-ar",
+          "versionRange": "[2.0.2,)",
+          "main": true
+        }
+      ],
+      "compatibilityList": [
+        {
+          "platformRequirement": "2.0",
+          "artifactVersions": [
+            "2.0.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.1",
+          "artifactVersions": [
+            "2.1.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.2",
+          "artifactVersions": [
+            "2.2.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.3",
+          "artifactVersions": [
+            "2.3.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.4",
+          "artifactVersions": [
+            "2.4.999"
+          ]
+        },
+        {
+          "platformRequirement": "3.0",
+          "artifactVersions": [
+            "3.0.999"
+          ]
+        }
+      ],
+      "commercial": false,
+      "commercial-21": false,
+      "weight": 50
+    },
+    {
+      "id": "turkish-translation",
+      "name": "Turkish Translation",
+      "about": "Turkish translation of the framework.",
+      "description": "## OVERVIEW\nThis add-on provides the Turkish translation of the framework messages and the localized set of data formats.\n\n## USAGE\nAfter installation, add Turkish (tr) locale using the Locales tab of the Project Properties window in Studio.\n\n ",
+      "category": "Translation",
+      "tags": [
+        "Localization"
+      ],
+      "vendor": "Abdalrahman Mohammed",
+      "updateDateTime": 1719389099000,
+      "dependencies": [
+        {
+          "group": "io.jmix.translations",
+          "name": "jmix-translations-tr",
+          "versionRange": "[2.0.2,)",
+          "main": true
+        }
+      ],
+      "compatibilityList": [
+        {
+          "platformRequirement": "2.0",
+          "artifactVersions": [
+            "2.0.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.1",
+          "artifactVersions": [
+            "2.1.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.2",
+          "artifactVersions": [
+            "2.2.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.3",
+          "artifactVersions": [
+            "2.3.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.4",
+          "artifactVersions": [
+            "2.4.999"
+          ]
+        },
+        {
+          "platformRequirement": "3.0",
+          "artifactVersions": [
+            "3.0.999"
+          ]
+        }
+      ],
+      "commercial": false,
+      "commercial-21": false,
+      "weight": 45
+    },
+    {
+      "id": "spanish-translation",
+      "name": "Spanish Translation",
+      "about": "Spanish translation of the framework.",
+      "description": "## Overview\nThis add-on provides the Spanish translation of the framework messages and the localized set of data formats.\n\n## Usage\nAfter installation, add Spanish (es) locale using the Locales tab of the Project Properties window in Studio.\n\n Spanish translation of the framework.",
+      "category": "Translation",
+      "tags": [
+        "Localization"
+      ],
+      "vendor": "Mario Medina",
+      "updateDateTime": 1719389097000,
+      "dependencies": [
+        {
+          "group": "io.jmix.translations",
+          "name": "jmix-translations-es",
+          "main": true
+        }
+      ],
+      "compatibilityList": [
+        {
+          "platformRequirement": "1.0",
+          "artifactVersions": [
+            "1.0.0"
+          ]
+        },
+        {
+          "platformRequirement": "2.1",
+          "artifactVersions": [
+            "2.1.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.2",
+          "artifactVersions": [
+            "2.2.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.3",
+          "artifactVersions": [
+            "2.3.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.4",
+          "artifactVersions": [
+            "2.4.999"
+          ]
+        },
+        {
+          "platformRequirement": "3.0",
+          "artifactVersions": [
+            "3.0.999"
+          ]
+        }
+      ],
+      "commercial": false,
+      "commercial-21": false,
+      "weight": 70
+    },
+    {
+      "id": "bulk-editor",
+      "name": "Bulk Editor",
+      "about": "Enables editing values in multiple rows of data at once.",
+      "description": "The add-on is designed to allow users to change attribute values for multiple entity instances at once. It provides an action that opens a special view where the user can enter desired attribute values. After that, the action updates the selected entities in the database and in the UI.\n\n ",
+      "category": "Add-on",
+      "tags": [
+        "UI",
+        "Features"
+      ],
+      "vendor": "Haulmont",
+      "updateDateTime": 1719389102000,
+      "dependencies": [
+        {
+          "group": "io.jmix.bulkeditor",
+          "name": "jmix-bulkeditor-starter",
+          "versionRange": "(2.0.999-SNAPSHOT,)",
+          "main": true
+        }
+      ],
+      "compatibilityList": [
+        {
+          "platformRequirement": "2.1",
+          "artifactVersions": [
+            "2.1.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.2",
+          "artifactVersions": [
+            "2.2.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.3",
+          "artifactVersions": [
+            "2.3.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.4",
+          "artifactVersions": [
+            "2.4.999"
+          ]
+        },
+        {
+          "platformRequirement": "3.0",
+          "artifactVersions": [
+            "3.0.999"
+          ]
+        }
+      ],
+      "commercial": false,
+      "commercial-21": false,
+      "weight": 630
+    },
+    {
+      "id": "jmx-console",
+      "name": "JMX Console",
+      "about": "Convenient UI for Java Management Extensions",
+      "description": "The add-on provides a web UI to monitor and manage the application components through the standard Java Management Extensions (JMX) API. It is a convenient alternative to such tools as JConsole or VisualVM.\n\nThe **JMX Console** view shows all MBeans registered in the JVM of the application. A user can view and change MBean attributes and invoke operations.\n\n ",
+      "category": "Add-on",
+      "tags": [
+        "System",
+        "UI"
+      ],
+      "vendor": "Haulmont",
+      "updateDateTime": 1719389122000,
+      "dependencies": [
+        {
+          "group": "io.jmix.jmxconsole",
+          "name": "jmix-jmxconsole-starter",
+          "versionRange": "(2.0.999-SNAPSHOT,)",
+          "main": true
+        }
+      ],
+      "compatibilityList": [
+        {
+          "platformRequirement": "2.1",
+          "artifactVersions": [
+            "2.1.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.2",
+          "artifactVersions": [
+            "2.2.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.3",
+          "artifactVersions": [
+            "2.3.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.4",
+          "artifactVersions": [
+            "2.4.999"
+          ]
+        },
+        {
+          "platformRequirement": "3.0",
+          "artifactVersions": [
+            "3.0.999"
+          ]
+        }
+      ],
+      "commercial": false,
+      "commercial-21": false,
+      "weight": 620
+    },
+    {
+      "id": "pessimistic-lock",
+      "name": "Pessimistic Locking",
+      "about": "In-memory pessimistic locking for entities and processes",
+      "description": "Pessimistic locking prevents conflicts that may arise when multiple users attempt to update the same resources.\n\nThe add-on automatically locks an entity instance when it is opened in the detail view. As a result, only one user can edit this particular entity instance in a given moment.\n\nThe pessimistic locking mechanism can also be used to manage simultaneous execution of arbitrary processes. The locks are distributed, since they are replicated in the cluster.\n\nThe add-on also provides a UI view where you can track the current state of locks and unlock any object if needed.\n\n ",
+      "category": "Add-on",
+      "tags": [
+        "System",
+        "UI"
+      ],
+      "vendor": "Haulmont",
+      "updateDateTime": 1719389125000,
+      "dependencies": [
+        {
+          "group": "io.jmix.pessimisticlock",
+          "name": "jmix-pessimisticlock-starter",
+          "versionRange": "(2.1.999-SNAPSHOT,)",
+          "main": true
+        },
+        {
+          "group": "io.jmix.pessimisticlock",
+          "name": "jmix-pessimisticlock-flowui-starter",
+          "versionRange": "(2.1.999-SNAPSHOT,)",
+          "main": true
+        }
+      ],
+      "compatibilityList": [
+        {
+          "platformRequirement": "2.2",
+          "artifactVersions": [
+            "2.2.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.3",
+          "artifactVersions": [
+            "2.3.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.4",
+          "artifactVersions": [
+            "2.4.999"
+          ]
+        },
+        {
+          "platformRequirement": "3.0",
+          "artifactVersions": [
+            "3.0.999"
+          ]
+        }
+      ],
+      "commercial": false,
+      "commercial-21": false,
+      "weight": 1
+    },
+    {
+      "id": "charts",
+      "name": "Charts",
+      "about": "Integrates ECharts library into Jmix UI",
+      "description": "The Jmix Charts add-on integrates <a href=\"https://echarts.apache.org/\" target=\"_blank\">Apache ECharts</a>, an open-source JavaScript visualization library, into Jmix UI. It enables developers to use ECharts for creating a wide range of chart types, providing a server-side API and easy binding to the backend data model.\n\n ",
+      "category": "Add-on",
+      "tags": [
+        "System",
+        "UI"
+      ],
+      "vendor": "Haulmont",
+      "updateDateTime": 1719389103000,
+      "dependencies": [
+        {
+          "group": "io.jmix.charts",
+          "name": "jmix-charts-flowui-starter",
+          "versionRange": "(2.1.999-SNAPSHOT,)",
+          "main": true
+        }
+      ],
+      "compatibilityList": [
+        {
+          "platformRequirement": "2.2",
+          "artifactVersions": [
+            "2.2.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.3",
+          "artifactVersions": [
+            "2.3.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.4",
+          "artifactVersions": [
+            "2.4.999"
+          ]
+        }
+      ],
+      "commercial": false,
+      "commercial-21": false,
+      "weight": 1
+    },
+    {
+      "id": "jmix-tinymce",
+      "name": "TinyMCE Editor",
+      "about": "This add-on allows you to use TinyMCE WYSIWYG Editor for editing rich text in Jmix applications.",
+      "description": "## Overview\nThis add-on allows you to use <a href=\"https://www.tiny.cloud/\" target=\"_blank\">TinyMCE WYSIWYG Editor</a> for editing rich text in Jmix applications.\n\n Integrates TinyMCE Editor into Jmix UI",
+      "category": "Add-on",
+      "tags": [
+        "UI"
+      ],
+      "vendor": "Panos Bariamis",
+      "updateDateTime": 1715155200000,
+      "dependencies": [
+        {
+          "group": "gr.netmechanics.jmix",
+          "name": "jmix-tinymce-starter",
+          "versionRange": "(2.2.999-SNAPSHOT,)",
+          "main": true
+        }
+      ],
+      "compatibilityList": [],
+      "commercial": false,
+      "commercial-21": false,
+      "weight": 1
+    },
+    {
+      "id": "br-pt-translation",
+      "name": "Brazilian Portuguese translation",
+      "about": "Brazilian Portuguese translation of the framework.",
+      "description": "## Overview\nThis add-on provides the Brazilian Portuguese translation of the framework messages and the localized set of data formats.\n\n## Usage\nAfter installation, add Portuguese (Brazil) (pt_BR) locale using the Locales tab of the Project Properties window in Studio.\n\n ",
+      "category": "Add-on",
+      "tags": [
+        "Localization"
+      ],
+      "vendor": "Eduardo Soares",
+      "updateDateTime": 1719389098000,
+      "dependencies": [
+        {
+          "group": "io.jmix.translations",
+          "name": "jmix-translations-pt-br",
+          "main": true
+        }
+      ],
+      "compatibilityList": [
+        {
+          "platformRequirement": "2.3",
+          "artifactVersions": [
+            "2.3.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.4",
+          "artifactVersions": [
+            "2.4.999"
+          ]
+        }
+      ],
+      "commercial": false,
+      "commercial-21": false,
+      "weight": 1
+    },
+    {
+      "id": "authorization-server",
+      "name": "Authorization Server",
+      "about": "Allows Jmix applications to function as OAuth 2.1 authorization server",
+      "description": "## Overview\n\nThe Authorization Server add-on allows Jmix applications to function as the OAuth 2.1 authorization server. The add-on is responsible for issuing access tokens to users and external clients according to the OAuth 2.1 specification.\n\n Allows Jmix applications to function as OAuth 2.1 authorization server",
+      "category": "Add-on",
+      "tags": [
+        "System",
+        "UI"
+      ],
+      "vendor": "Haulmont",
+      "updateDateTime": 1719389101000,
+      "dependencies": [
+        {
+          "group": "io.jmix.authserver",
+          "name": "jmix-authserver-starter",
+          "versionRange": "(2.2.999-SNAPSHOT,)",
+          "main": true
+        }
+      ],
+      "compatibilityList": [
+        {
+          "platformRequirement": "2.0",
+          "artifactVersions": [
+            "2.0.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.1",
+          "artifactVersions": [
+            "2.1.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.2",
+          "artifactVersions": [
+            "2.2.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.3",
+          "artifactVersions": [
+            "2.3.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.4",
+          "artifactVersions": [
+            "2.4.999"
+          ]
+        },
+        {
+          "platformRequirement": "3.0",
+          "artifactVersions": [
+            "3.0.999"
+          ]
+        }
+      ],
+      "commercial": false,
+      "commercial-21": false,
+      "weight": 1
+    },
+    {
+      "id": "superset",
+      "name": "Superset",
+      "about": "Integration with Apache Superset for embedding dashboards into application views.",
+      "description": "## Overview\n\nThe Superset add-on is designed to integrate Jmix applications with Apache Superset. It provides the SupersetDashboard component and related functions that allow you to embed dashboards created in Apache Superset into application views.\n\n Integration with Apache Superset for embedding dashboards into application views.",
+      "category": "Add-on",
+      "tags": [
+        "System",
+        "UI"
+      ],
+      "vendor": "Haulmont",
+      "updateDateTime": 1719389132000,
+      "dependencies": [
+        {
+          "group": "io.jmix.superset",
+          "name": "jmix-superset-starter",
+          "versionRange": "(2.2.999-SNAPSHOT,)",
+          "main": true
+        },
+        {
+          "group": "io.jmix.superset",
+          "name": "jmix-superset-flowui-starter",
+          "versionRange": "(2.2.999-SNAPSHOT,)",
+          "main": true
+        }
+      ],
+      "compatibilityList": [
+        {
+          "platformRequirement": "2.3",
+          "artifactVersions": [
+            "2.3.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.4",
+          "artifactVersions": [
+            "2.4.999"
+          ]
+        }
+      ],
+      "commercial": false,
+      "commercial-21": false,
+      "weight": 1
+    },
+    {
+      "id": "grapesjs",
+      "name": "GrapesJS",
+      "about": "A visual HTML editor based on the GrapesJS library.",
+      "description": "## Overview\nThe add-on provides a visual HTML editor based on a <a href=\"https://grapesjs.com/\" target=\"_blank\">GrapesJS</a> JavaScript library with the extensive set of HTML elements. It allows building HTML templates without any knowledge of coding.</p>\n\nAll you need is to drag an element into the canvas. The wide range of options enables independent styling of any element inside the canvas.\n\nTree of elements is always available to control the structure. Also, you can edit HTML code manually or upload code from the file.\n\n## Features\n\n* Wide variety of built-in HTML elements.\n* Viewing representation for different devices.\n* Using CSS properties.\n* Downloading/uploading HTML code.\n\n ",
+      "category": "Add-on",
+      "tags": [
+        "UI"
+      ],
+      "vendor": "Haulmont",
+      "updateDateTime": 1703073847000,
+      "dependencies": [
+        {
+          "group": "io.jmix.grapesjs",
+          "name": "jmix-grapesjs-starter",
+          "main": true,
+          "versionRange": "(,1.4.999-SNAPSHOT]"
+        },
+        {
+          "group": "io.jmix.grapesjs",
+          "name": "jmix-grapesjs-ui-starter",
+          "main": true,
+          "versionRange": "(1.4.999-SNAPSHOT,)"
+        }
+      ],
+      "compatibilityList": [
+        {
+          "platformRequirement": "1.5",
+          "artifactVersions": [
+            "1.5.5"
+          ]
+        },
+        {
+          "platformRequirement": "0.9",
+          "artifactVersions": [
+            "0.9.999"
+          ]
+        },
+        {
+          "platformRequirement": "1.6",
+          "artifactVersions": [
+            "1.6.999"
+          ]
+        },
+        {
+          "platformRequirement": "1.4",
+          "artifactVersions": [
+            "1.4.999"
+          ]
+        },
+        {
+          "platformRequirement": "1.3",
+          "artifactVersions": [
+            "1.3.999"
+          ]
+        },
+        {
+          "platformRequirement": "1.2",
+          "artifactVersions": [
+            "1.2.999"
+          ]
+        },
+        {
+          "platformRequirement": "1.1",
+          "artifactVersions": [
+            "1.1.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.0",
+          "artifactVersions": [
+            "2.0.999"
+          ]
+        },
+        {
+          "platformRequirement": "1.0",
+          "artifactVersions": [
+            "1.0.999"
+          ]
+        },
+        {
+          "platformRequirement": "0.3",
+          "artifactVersions": [
+            "0.3.2"
+          ]
+        }
+      ],
+      "commercial": false,
+      "commercial-21": false,
+      "weight": 330
     },
     {
       "id": "russian-translation",
@@ -2275,7 +4090,7 @@
         "Localization"
       ],
       "vendor": "Haulmont",
-      "updateDateTime": 1675072284000,
+      "updateDateTime": 1719389098000,
       "dependencies": [
         {
           "group": "io.jmix.translations",
@@ -2337,10 +4152,53 @@
           "artifactVersions": [
             "1.5.999"
           ]
+        },
+        {
+          "platformRequirement": "1.6",
+          "artifactVersions": [
+            "1.6.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.0",
+          "artifactVersions": [
+            "2.0.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.1",
+          "artifactVersions": [
+            "2.1.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.2",
+          "artifactVersions": [
+            "2.2.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.3",
+          "artifactVersions": [
+            "2.3.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.4",
+          "artifactVersions": [
+            "2.4.999"
+          ]
+        },
+        {
+          "platformRequirement": "3.0",
+          "artifactVersions": [
+            "3.0.999"
+          ]
         }
       ],
       "commercial": false,
-      "weight": -1
+      "commercial-21": false,
+      "weight": 80
     },
     {
       "id": "german-translation",
@@ -2351,8 +4209,8 @@
       "tags": [
         "Localization"
       ],
-      "vendor": "Haulmont",
-      "updateDateTime": 1675072279000,
+      "vendor": "Community",
+      "updateDateTime": 1719389096000,
       "dependencies": [
         {
           "group": "io.jmix.translations",
@@ -2396,10 +4254,53 @@
           "artifactVersions": [
             "1.5.999"
           ]
+        },
+        {
+          "platformRequirement": "1.6",
+          "artifactVersions": [
+            "1.6.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.0",
+          "artifactVersions": [
+            "2.0.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.1",
+          "artifactVersions": [
+            "2.1.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.2",
+          "artifactVersions": [
+            "2.2.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.3",
+          "artifactVersions": [
+            "2.3.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.4",
+          "artifactVersions": [
+            "2.4.999"
+          ]
+        },
+        {
+          "platformRequirement": "3.0",
+          "artifactVersions": [
+            "3.0.999"
+          ]
         }
       ],
       "commercial": false,
-      "weight": 0
+      "commercial-21": false,
+      "weight": 90
     },
     {
       "id": "simplified-chinese-translation",
@@ -2411,7 +4312,7 @@
         "Localization"
       ],
       "vendor": "Haulmont",
-      "updateDateTime": 1675072284000,
+      "updateDateTime": 1719389099000,
       "dependencies": [
         {
           "group": "io.jmix.translations",
@@ -2455,10 +4356,53 @@
           "artifactVersions": [
             "1.5.999"
           ]
+        },
+        {
+          "platformRequirement": "1.6",
+          "artifactVersions": [
+            "1.6.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.0",
+          "artifactVersions": [
+            "2.0.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.1",
+          "artifactVersions": [
+            "2.1.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.2",
+          "artifactVersions": [
+            "2.2.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.3",
+          "artifactVersions": [
+            "2.3.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.4",
+          "artifactVersions": [
+            "2.4.999"
+          ]
+        },
+        {
+          "platformRequirement": "3.0",
+          "artifactVersions": [
+            "3.0.999"
+          ]
         }
       ],
       "commercial": false,
-      "weight": -2
+      "commercial-21": false,
+      "weight": 60
     },
     {
       "id": "romanian-translation",
@@ -2470,7 +4414,7 @@
         "Localization"
       ],
       "vendor": "Sorin Federiga",
-      "updateDateTime": 1675072283000,
+      "updateDateTime": 1719389098000,
       "dependencies": [
         {
           "group": "io.jmix.translations",
@@ -2508,10 +4452,53 @@
           "artifactVersions": [
             "1.5.999"
           ]
+        },
+        {
+          "platformRequirement": "1.6",
+          "artifactVersions": [
+            "1.6.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.0",
+          "artifactVersions": [
+            "2.0.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.1",
+          "artifactVersions": [
+            "2.1.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.2",
+          "artifactVersions": [
+            "2.2.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.3",
+          "artifactVersions": [
+            "2.3.999"
+          ]
+        },
+        {
+          "platformRequirement": "2.4",
+          "artifactVersions": [
+            "2.4.999"
+          ]
+        },
+        {
+          "platformRequirement": "3.0",
+          "artifactVersions": [
+            "3.0.999"
+          ]
         }
       ],
       "commercial": false,
-      "weight": -2
+      "commercial-21": false,
+      "weight": 40
     }
   ]
 }
