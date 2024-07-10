@@ -3851,7 +3851,7 @@
       "name": "Brazilian Portuguese translation",
       "about": "Brazilian Portuguese translation of the framework.",
       "description": "## Overview\nThis add-on provides the Brazilian Portuguese translation of the framework messages and the localized set of data formats.\n\n## Usage\nAfter installation, add Portuguese (Brazil) (pt_BR) locale using the Locales tab of the Project Properties window in Studio.\n\n ",
-      "category": "Add-on",
+      "category": "Translation",
       "tags": [
         "Localization"
       ],
