@@ -7345,7 +7345,7 @@
       "description": "## Overview\n\nImprove your application security with Jmix SAML using ready-to-use Spring Security configurations and SAML 2.0 to simplify logins via trusted enterprise identity providers such as Microsoft Entra ID, Okta, Keycloak, and others.\n\n## Use Cases\n\n* Streamlined authentication: implement Single Sign-On across multiple Jmix applications, providing a cohesive and secure user experience.\n* Unified identity management: centralize the management of user credentials and permissions using federated identity from SAML identity providers.\n\n## Key Features\n\n* Preconfigured security: use predefined Spring Security configurations for quick and easy setup.\n* Attribute and role mapping: map SAML assertions, user attributes, and roles into the Jmix user management system.\n* Consistent user data: keep user accounts and assigned roles consistent upon successful authentication.\n\nEnhance your app’s security by adding the SAML add-on now.",
       "category": "Add-on",
       "commercial": false,
-      "weight": null,
+      "weight": 295,
       "dependencies": [
         {
           "group": "io.jmix.saml",
