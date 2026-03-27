@@ -210,6 +210,7 @@
         {
           "platformRequirement": "2.8",
           "artifactVersions": [
+            "2.8.0",
             "2.8.0-RC1"
           ]
         },
@@ -224,7 +225,7 @@
         "Features"
       ],
       "vendor": "Haulmont",
-      "updateDateTime": 1773319564000
+      "updateDateTime": 1774536109000
     },
     {
       "id": "arabic-translation",
@@ -317,6 +318,7 @@
         {
           "platformRequirement": "2.8",
           "artifactVersions": [
+            "2.8.0",
             "2.8.0-RC1"
           ]
         },
@@ -331,7 +333,7 @@
         "Localization"
       ],
       "vendor": "Abdalrahman Mohammed",
-      "updateDateTime": 1773319535000
+      "updateDateTime": 1774536082000
     },
     {
       "id": "audit",
@@ -535,6 +537,7 @@
         {
           "platformRequirement": "2.8",
           "artifactVersions": [
+            "2.8.0",
             "2.8.0-RC1"
           ]
         },
@@ -549,7 +552,7 @@
         "Features"
       ],
       "vendor": "Haulmont",
-      "updateDateTime": 1773319578000
+      "updateDateTime": 1774536122000
     },
     {
       "id": "authorization-server",
@@ -646,6 +649,7 @@
         {
           "platformRequirement": "2.8",
           "artifactVersions": [
+            "2.8.0",
             "2.8.0-RC1"
           ]
         },
@@ -661,7 +665,7 @@
         "UI"
       ],
       "vendor": "Haulmont",
-      "updateDateTime": 1773319579000
+      "updateDateTime": 1774536124000
     },
     {
       "id": "aws-file-storage",
@@ -847,6 +851,7 @@
         {
           "platformRequirement": "2.8",
           "artifactVersions": [
+            "2.8.0",
             "2.8.0-RC1"
           ]
         },
@@ -862,7 +867,7 @@
         "System"
       ],
       "vendor": "Haulmont",
-      "updateDateTime": 1773319580000
+      "updateDateTime": 1774536124000
     },
     {
       "id": "azure-file-storage",
@@ -1108,6 +1113,7 @@
         {
           "platformRequirement": "2.8",
           "artifactVersions": [
+            "2.8.0",
             "2.8.0-RC1"
           ]
         },
@@ -1122,7 +1128,7 @@
         "Features"
       ],
       "vendor": "Haulmont",
-      "updateDateTime": 1773320498000
+      "updateDateTime": 1774536981000
     },
     {
       "id": "br-pt-translation",
@@ -1187,6 +1193,7 @@
         {
           "platformRequirement": "2.8",
           "artifactVersions": [
+            "2.8.0",
             "2.8.0-RC1"
           ]
         }
@@ -1195,7 +1202,7 @@
         "Localization"
       ],
       "vendor": "Eduardo Soares",
-      "updateDateTime": 1773319538000
+      "updateDateTime": 1774536085000
     },
     {
       "id": "bulk-editor",
@@ -1283,6 +1290,7 @@
         {
           "platformRequirement": "2.8",
           "artifactVersions": [
+            "2.8.0",
             "2.8.0-RC1"
           ]
         },
@@ -1298,7 +1306,7 @@
         "UI"
       ],
       "vendor": "Haulmont",
-      "updateDateTime": 1773319581000
+      "updateDateTime": 1774536125000
     },
     {
       "id": "business-calendars",
@@ -1465,6 +1473,7 @@
         {
           "platformRequirement": "2.8",
           "artifactVersions": [
+            "2.8.0",
             "2.8.0-RC1"
           ]
         },
@@ -1479,7 +1488,7 @@
         "Features"
       ],
       "vendor": "Haulmont",
-      "updateDateTime": 1773320506000
+      "updateDateTime": 1774536988000
     },
     {
       "id": "calendar",
@@ -1536,6 +1545,7 @@
         {
           "platformRequirement": "2.8",
           "artifactVersions": [
+            "2.8.0",
             "2.8.0-RC1"
           ]
         },
@@ -1550,7 +1560,7 @@
         "UI"
       ],
       "vendor": "Haulmont",
-      "updateDateTime": 1773319653000
+      "updateDateTime": 1774536190000
     },
     {
       "id": "charts",
@@ -1628,6 +1638,7 @@
         {
           "platformRequirement": "2.8",
           "artifactVersions": [
+            "2.8.0",
             "2.8.0-RC1"
           ]
         },
@@ -1643,7 +1654,7 @@
         "UI"
       ],
       "vendor": "Haulmont",
-      "updateDateTime": 1773319582000
+      "updateDateTime": 1774536126000
     },
     {
       "id": "charts1x",
@@ -1800,6 +1811,7 @@
         {
           "platformRequirement": "2.8",
           "artifactVersions": [
+            "2.8.0",
             "2.8.0-RC1",
             "2.8.999-SNAPSHOT"
           ]
@@ -1809,7 +1821,7 @@
         "Localization"
       ],
       "vendor": "Tomáš Klemš",
-      "updateDateTime": 1773319536000
+      "updateDateTime": 1774536083000
     },
     {
       "id": "danish-translation",
@@ -1836,6 +1848,7 @@
         {
           "platformRequirement": "2.8",
           "artifactVersions": [
+            "2.8.0",
             "2.8.0-RC1",
             "2.8.999-SNAPSHOT"
           ]
@@ -1845,7 +1858,7 @@
         "Localization"
       ],
       "vendor": "Torben Merrald",
-      "updateDateTime": 1773319536000
+      "updateDateTime": 1774536083000
     },
     {
       "id": "dashboards",
@@ -2160,6 +2173,7 @@
         {
           "platformRequirement": "2.8",
           "artifactVersions": [
+            "2.8.0",
             "2.8.0-RC1"
           ]
         },
@@ -2174,7 +2188,7 @@
         "Features"
       ],
       "vendor": "Haulmont",
-      "updateDateTime": 1773319594000
+      "updateDateTime": 1774536135000
     },
     {
       "id": "duration-field",
@@ -2364,6 +2378,7 @@
         {
           "platformRequirement": "2.8",
           "artifactVersions": [
+            "2.8.0",
             "2.8.0-RC1"
           ]
         },
@@ -2378,7 +2393,7 @@
         "Localization"
       ],
       "vendor": "EZ Software",
-      "updateDateTime": 1773319538000
+      "updateDateTime": 1774536085000
     },
     {
       "id": "dynamic-attributes",
@@ -2579,6 +2594,7 @@
         {
           "platformRequirement": "2.8",
           "artifactVersions": [
+            "2.8.0",
             "2.8.0-RC1"
           ]
         },
@@ -2593,7 +2609,7 @@
         "Features"
       ],
       "vendor": "Haulmont",
-      "updateDateTime": 1773319606000
+      "updateDateTime": 1774536147000
     },
     {
       "id": "email-sending",
@@ -2795,6 +2811,7 @@
         {
           "platformRequirement": "2.8",
           "artifactVersions": [
+            "2.8.0",
             "2.8.0-RC1"
           ]
         },
@@ -2809,7 +2826,7 @@
         "Features"
       ],
       "vendor": "Haulmont",
-      "updateDateTime": 1773319612000
+      "updateDateTime": 1774536153000
     },
     {
       "id": "email-templates",
@@ -3137,6 +3154,7 @@
         {
           "platformRequirement": "2.8",
           "artifactVersions": [
+            "2.8.0",
             "2.8.0-RC1"
           ]
         },
@@ -3151,7 +3169,7 @@
         "Localization"
       ],
       "vendor": "Benoît VALLETTE d'OSIA",
-      "updateDateTime": 1773319537000
+      "updateDateTime": 1774536084000
     },
     {
       "id": "german-translation",
@@ -3324,6 +3342,7 @@
         {
           "platformRequirement": "2.8",
           "artifactVersions": [
+            "2.8.0",
             "2.8.0-RC1"
           ]
         },
@@ -3338,7 +3357,7 @@
         "Localization"
       ],
       "vendor": "Community",
-      "updateDateTime": 1773319536000
+      "updateDateTime": 1774536083000
     },
     {
       "id": "google-place",
@@ -3667,6 +3686,7 @@
         {
           "platformRequirement": "2.8",
           "artifactVersions": [
+            "2.8.0",
             "2.8.0-RC1"
           ]
         },
@@ -3681,7 +3701,7 @@
         "Localization"
       ],
       "vendor": "Panos Bariamis",
-      "updateDateTime": 1773319537000
+      "updateDateTime": 1774536084000
     },
     {
       "id": "grid-export-actions",
@@ -3881,6 +3901,7 @@
         {
           "platformRequirement": "2.8",
           "artifactVersions": [
+            "2.8.0",
             "2.8.0-RC1"
           ]
         },
@@ -3895,7 +3916,7 @@
         "Features"
       ],
       "vendor": "Haulmont",
-      "updateDateTime": 1773319654000
+      "updateDateTime": 1774536191000
     },
     {
       "id": "group-data-grid",
@@ -3928,6 +3949,7 @@
         {
           "platformRequirement": "2.8",
           "artifactVersions": [
+            "2.8.0",
             "2.8.0-RC1",
             "2.8.999-SNAPSHOT"
           ]
@@ -3943,7 +3965,7 @@
         "UI"
       ],
       "vendor": "Haulmont",
-      "updateDateTime": 1773320518000
+      "updateDateTime": 1774537001000
     },
     {
       "id": "image-cropper",
@@ -4235,6 +4257,7 @@
         {
           "platformRequirement": "2.8",
           "artifactVersions": [
+            "2.8.0",
             "2.8.0-RC1"
           ]
         },
@@ -4249,7 +4272,7 @@
         "Localization"
       ],
       "vendor": "Tommaso Tuni",
-      "updateDateTime": 1773319538000
+      "updateDateTime": 1774536084000
     },
     {
       "id": "jmix-data-model-browse",
@@ -4521,6 +4544,7 @@
         {
           "platformRequirement": "2.8",
           "artifactVersions": [
+            "2.8.0",
             "2.8.0-RC1"
           ]
         },
@@ -4536,7 +4560,7 @@
         "UI"
       ],
       "vendor": "Haulmont",
-      "updateDateTime": 1773319658000
+      "updateDateTime": 1774536195000
     },
     {
       "id": "kanban",
@@ -4593,6 +4617,7 @@
         {
           "platformRequirement": "2.8",
           "artifactVersions": [
+            "2.8.0",
             "2.8.0-RC1"
           ]
         },
@@ -4608,7 +4633,7 @@
         "UI"
       ],
       "vendor": "Haulmont",
-      "updateDateTime": 1773320519000
+      "updateDateTime": 1774537002000
     },
     {
       "id": "kurdish-translation",
@@ -4746,6 +4771,7 @@
         {
           "platformRequirement": "2.8",
           "artifactVersions": [
+            "2.8.0",
             "2.8.0-RC1"
           ]
         },
@@ -4760,7 +4786,7 @@
         "Localization"
       ],
       "vendor": "Swara",
-      "updateDateTime": 1773319535000
+      "updateDateTime": 1774536083000
     },
     {
       "id": "ldap",
@@ -4934,6 +4960,7 @@
         {
           "platformRequirement": "2.8",
           "artifactVersions": [
+            "2.8.0",
             "2.8.0-RC1"
           ]
         },
@@ -4949,7 +4976,7 @@
         "Security"
       ],
       "vendor": "Haulmont",
-      "updateDateTime": 1773319662000
+      "updateDateTime": 1774536199000
     },
     {
       "id": "localizedstring-datatype",
@@ -5185,6 +5212,7 @@
         {
           "platformRequirement": "2.8",
           "artifactVersions": [
+            "2.8.0",
             "2.8.0-RC1"
           ]
         },
@@ -5199,7 +5227,7 @@
         "UI"
       ],
       "vendor": "Haulmont",
-      "updateDateTime": 1773320521000
+      "updateDateTime": 1774537003000
     },
     {
       "id": "menu-editor",
@@ -5296,6 +5324,7 @@
         {
           "platformRequirement": "2.8",
           "artifactVersions": [
+            "2.8.0",
             "2.8.0-RC1"
           ]
         },
@@ -5311,7 +5340,7 @@
         "UI"
       ],
       "vendor": "Haulmont",
-      "updateDateTime": 1773319677000
+      "updateDateTime": 1774536214000
     },
     {
       "id": "minio-file-storage",
@@ -5596,6 +5625,7 @@
         {
           "platformRequirement": "2.8",
           "artifactVersions": [
+            "2.8.0",
             "2.8.0-RC1"
           ]
         },
@@ -5610,7 +5640,7 @@
         "System"
       ],
       "vendor": "Haulmont",
-      "updateDateTime": 1773319682000
+      "updateDateTime": 1774536219000
     },
     {
       "id": "notifications",
@@ -5776,6 +5806,7 @@
         {
           "platformRequirement": "2.8",
           "artifactVersions": [
+            "2.8.0",
             "2.8.0-RC1"
           ]
         },
@@ -5790,7 +5821,7 @@
         "Features"
       ],
       "vendor": "Haulmont",
-      "updateDateTime": 1773320527000
+      "updateDateTime": 1774537010000
     },
     {
       "id": "openid-connect",
@@ -5948,6 +5979,7 @@
         {
           "platformRequirement": "2.8",
           "artifactVersions": [
+            "2.8.0",
             "2.8.0-RC1"
           ]
         },
@@ -5963,7 +5995,7 @@
         "Security"
       ],
       "vendor": "Haulmont",
-      "updateDateTime": 1773319682000
+      "updateDateTime": 1774536220000
     },
     {
       "id": "pessimistic-lock",
@@ -6046,6 +6078,7 @@
         {
           "platformRequirement": "2.8",
           "artifactVersions": [
+            "2.8.0",
             "2.8.0-RC1"
           ]
         },
@@ -6061,7 +6094,7 @@
         "UI"
       ],
       "vendor": "Haulmont",
-      "updateDateTime": 1773319685000
+      "updateDateTime": 1774536223000
     },
     {
       "id": "pivot-table",
@@ -6118,6 +6151,7 @@
         {
           "platformRequirement": "2.8",
           "artifactVersions": [
+            "2.8.0",
             "2.8.0-RC1"
           ]
         },
@@ -6132,7 +6166,7 @@
         "UI"
       ],
       "vendor": "Haulmont",
-      "updateDateTime": 1773319686000
+      "updateDateTime": 1774536224000
     },
     {
       "id": "pivot-table-1.x",
@@ -6432,6 +6466,7 @@
         {
           "platformRequirement": "2.8",
           "artifactVersions": [
+            "2.8.0",
             "2.8.0-RC1"
           ]
         },
@@ -6447,7 +6482,7 @@
         "System"
       ],
       "vendor": "Haulmont",
-      "updateDateTime": 1773319690000
+      "updateDateTime": 1774536227000
     },
     {
       "id": "reports",
@@ -6644,6 +6679,7 @@
         {
           "platformRequirement": "2.8",
           "artifactVersions": [
+            "2.8.0",
             "2.8.0-RC1"
           ]
         },
@@ -6658,7 +6694,7 @@
         "Features"
       ],
       "vendor": "Haulmont",
-      "updateDateTime": 1773319703000
+      "updateDateTime": 1774536241000
     },
     {
       "id": "rest-api",
@@ -6863,6 +6899,7 @@
         {
           "platformRequirement": "2.8",
           "artifactVersions": [
+            "2.8.0",
             "2.8.0-RC1"
           ]
         },
@@ -6877,7 +6914,7 @@
         "Integration"
       ],
       "vendor": "Haulmont",
-      "updateDateTime": 1773319704000
+      "updateDateTime": 1774536242000
     },
     {
       "id": "rest-datastore",
@@ -6934,6 +6971,7 @@
         {
           "platformRequirement": "2.8",
           "artifactVersions": [
+            "2.8.0",
             "2.8.0-RC1"
           ]
         },
@@ -6948,7 +6986,7 @@
         "Integration"
       ],
       "vendor": "Haulmont",
-      "updateDateTime": 1773319704000
+      "updateDateTime": 1774536242000
     },
     {
       "id": "romanian-translation",
@@ -7113,6 +7151,7 @@
         {
           "platformRequirement": "2.8",
           "artifactVersions": [
+            "2.8.0",
             "2.8.0-RC1"
           ]
         },
@@ -7127,7 +7166,7 @@
         "Localization"
       ],
       "vendor": "Sorin Federiga",
-      "updateDateTime": 1773319539000
+      "updateDateTime": 1774536085000
     },
     {
       "id": "russian-translation",
@@ -7322,6 +7361,7 @@
         {
           "platformRequirement": "2.8",
           "artifactVersions": [
+            "2.8.0",
             "2.8.0-RC1"
           ]
         },
@@ -7336,7 +7376,7 @@
         "Localization"
       ],
       "vendor": "Haulmont",
-      "updateDateTime": 1773319539000
+      "updateDateTime": 1774536085000
     },
     {
       "id": "saml",
@@ -7357,6 +7397,7 @@
         {
           "platformRequirement": "2.8",
           "artifactVersions": [
+            "2.8.0",
             "2.8.0-RC1"
           ]
         }
@@ -7366,7 +7407,7 @@
         "Security"
       ],
       "vendor": "Haulmont",
-      "updateDateTime": 1773319714000
+      "updateDateTime": 1774536252000
     },
     {
       "id": "search",
@@ -7554,6 +7595,7 @@
         {
           "platformRequirement": "2.8",
           "artifactVersions": [
+            "2.8.0",
             "2.8.0-RC1"
           ]
         },
@@ -7569,7 +7611,7 @@
         "Integration"
       ],
       "vendor": "Haulmont",
-      "updateDateTime": 1773319731000
+      "updateDateTime": 1774536268000
     },
     {
       "id": "simplified-chinese-translation",
@@ -7743,6 +7785,7 @@
         {
           "platformRequirement": "2.8",
           "artifactVersions": [
+            "2.8.0",
             "2.8.0-RC1"
           ]
         },
@@ -7757,7 +7800,7 @@
         "Localization"
       ],
       "vendor": "Haulmont",
-      "updateDateTime": 1773319539000
+      "updateDateTime": 1774536086000
     },
     {
       "id": "spanish-translation",
@@ -7848,6 +7891,7 @@
         {
           "platformRequirement": "2.8",
           "artifactVersions": [
+            "2.8.0",
             "2.8.0-RC1"
           ]
         },
@@ -7862,7 +7906,7 @@
         "Localization"
       ],
       "vendor": "Mario Medina",
-      "updateDateTime": 1773319537000
+      "updateDateTime": 1774536084000
     },
     {
       "id": "superset",
@@ -7935,6 +7979,7 @@
         {
           "platformRequirement": "2.8",
           "artifactVersions": [
+            "2.8.0",
             "2.8.0-RC1"
           ]
         },
@@ -7950,7 +7995,7 @@
         "UI"
       ],
       "vendor": "Haulmont",
-      "updateDateTime": 1773319735000
+      "updateDateTime": 1774536272000
     },
     {
       "id": "swagger-ui",
@@ -8048,6 +8093,7 @@
         {
           "platformRequirement": "2.8",
           "artifactVersions": [
+            "2.8.0",
             "2.8.0-RC1"
           ]
         },
@@ -8062,7 +8108,7 @@
         "UI"
       ],
       "vendor": "Haulmont",
-      "updateDateTime": 1773320554000
+      "updateDateTime": 1774537034000
     },
     {
       "id": "turkish-translation",
@@ -8155,6 +8201,7 @@
         {
           "platformRequirement": "2.8",
           "artifactVersions": [
+            "2.8.0",
             "2.8.0-RC1"
           ]
         },
@@ -8169,7 +8216,7 @@
         "Localization"
       ],
       "vendor": "Abdalrahman Mohammed",
-      "updateDateTime": 1773319539000
+      "updateDateTime": 1774536086000
     },
     {
       "id": "ui-constraints",
@@ -8226,6 +8273,7 @@
         {
           "platformRequirement": "2.8",
           "artifactVersions": [
+            "2.8.0",
             "2.8.0-RC1"
           ]
         },
@@ -8240,7 +8288,7 @@
         "Security"
       ],
       "vendor": "Haulmont",
-      "updateDateTime": 1773320556000
+      "updateDateTime": 1774537035000
     },
     {
       "id": "webdav",
@@ -8420,6 +8468,7 @@
         {
           "platformRequirement": "2.8",
           "artifactVersions": [
+            "2.8.0",
             "2.8.0-RC1"
           ]
         },
@@ -8434,7 +8483,7 @@
         "Features"
       ],
       "vendor": "Haulmont",
-      "updateDateTime": 1773320563000
+      "updateDateTime": 1774537042000
     },
     {
       "id": "wizard",
